@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="TestNg">
+		<classes>
+
+			<class
+				name="com.hero.testCases.TC_GenMedicalConditionsTreatments_No__003" />
+			<class
+				name="com.hero.testCases.TC_GenMedicalConditionsTreatments_Yes_015" />
+			<class name="com.hero.testCases.TC_RegSelspousesPlan_05" />
+			<class name="com.hero.testCases.TC_RegNotEligible_006" />
+			<class name="com.hero.testCases.TC_RegWonttCoverage_007" />
+			<class name="com.hero.testCases.TC_RegSelWaitingPriod_008" />
+			<class name="com.hero.testCases.TC_RegselUnderAnotherPln_009" />
+			<class name="com.hero.testCases.TC_RegSelVeterans_010" />
+			<class name="com.hero.testCases.TC_RegSelMedicare_011" />
+			<class name="com.hero.testCases.TC_RegSelMedicaid_012" />
+			<class name="com.hero.testCases.TC_RegSelIndividual_013" />
+			<class name="com.hero.testCases.TC_RegSelOtherReason_014" />
+		</classes>
+	</test> <!-- TestNg -->
+</suite> <!-- Suite -->

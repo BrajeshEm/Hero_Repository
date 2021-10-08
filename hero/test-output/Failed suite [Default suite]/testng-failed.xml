@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Default suite]]">
+  <test thread-count="5" name="Default test(failed)(failed)">
+    <classes>
+      <class name="com.Guru99APP.TestCase.TC_AddNewCustDD_001">
+        <methods>
+          <include name="CustTest" invocation-numbers="0 12"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
+          <include name="methodname"/>
+          <include name="getResult"/>
+          <include name="beforeClass"/>
+          <include name="extentReporGenerator"/>
+        </methods>
+      </class> <!-- com.Guru99APP.TestCase.TC_AddNewCustDD_001 -->
+    </classes>
+  </test> <!-- Default test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Default suite]] -->

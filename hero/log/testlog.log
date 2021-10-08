@@ -6120,3 +6120,10 @@ OrManage Users Vs The user has been successfully created.
 2021-10-08 12:59:21,725 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 94.0.4606.61 (since Google Chrome 94 is installed in your machine)
 2021-10-08 12:59:21,774 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\91971\.m2\repository\webdriver\chromedriver\win32\94.0.4606.61\chromedriver.exe
 2021-10-08 12:59:27,717 - Hero_Index -INFO - Successfully navigate to URL : http://stage.bavvy.com/login
+2021-10-08 13:37:15,789 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 94.0.4606.61 (since Google Chrome 94 is installed in your machine)
+2021-10-08 13:37:15,876 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\91971\.m2\repository\webdriver\chromedriver\win32\94.0.4606.61\chromedriver.exe
+2021-10-08 13:37:30,459 - Hero_Index -INFO - Successfully navigate to URL : https://herouw.net//Forms/Index?cid=kOLweOz9WVs__s_&isghq=false
+2021-10-08 13:37:33,607 - Hero_Index -INFO - Performed click operation on : Registor
+2021-10-08 13:38:03,260 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 94.0.4606.61 (since Google Chrome 94 is installed in your machine)
+2021-10-08 13:38:03,317 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\91971\.m2\repository\webdriver\chromedriver\win32\94.0.4606.61\chromedriver.exe
+2021-10-08 13:38:12,821 - Hero_Index -INFO - Successfully navigate to URL : http://stage.bavvy.com/dashboard

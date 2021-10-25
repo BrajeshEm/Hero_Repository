@@ -4,6 +4,7 @@ package com.heroGeneralPHQForms.testCases;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.hero.config.ActionDriver;
@@ -60,6 +61,7 @@ public void verifyRegUsingYesStep_3() throws Exception {
 	reg.setUserName(uname, 5, "UserName");
 	reg.setPassword("Hero@122", 5, "Password");
 	reg.setConfrmPswrd("Hero@122", 5, "Password");
+	
 	reg.setDob("07/07/1981", 5, " DOB ");
 	reg.setEmailId("radhe.kumar@gmail.com", 5, "Email Id");
 	reg.setAddress1("Address: 11255 Trade", 5, "Address1");
@@ -74,7 +76,7 @@ public void verifyRegUsingYesStep_3() throws Exception {
 			.createNode(" Go to PHQ_Registration Step2 - Demographic, Build and Tobacco Use ");
 
 	// Test Steps:-
-	reg.setSSN("123456789", 20, "SSN");
+	//reg.setSSN("123456789", 20, "SSN");   //disabled
 	reg.setGender("F", 20);
 	reg.setHeightFt("6", 5, "Height in Ft");
 	reg.setHeightInch("4", 5, "Height in Inch");

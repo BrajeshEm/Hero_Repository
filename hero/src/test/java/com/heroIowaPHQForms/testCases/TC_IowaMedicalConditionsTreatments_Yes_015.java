@@ -9,22 +9,23 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.hero.config.ActionDriver;
 import com.hero.config.StartBrowser;
-import com.hero.pageObjects.RegistorPage;
 import com.hero.utilities.getUtil;
+
+import com_heroPHQForm_pageObjects.PHQ_general_registerPage;
 
 public class TC_IowaMedicalConditionsTreatments_Yes_015 extends StartBrowser{
 
 	/***
 	 * 
 	 * @author Brajesh Kumar 
-	           Test Script 03 This Test Script is Created to Vrify Registor Section
+	           Test Script 03 This Test Script is Created to Vrify Register Section
 	           ************** 
 	           Test Steps
 	           1) Go to https://herouw.net//Forms/Index?cid=pP1wcnwLK2Q__s_&isghq=false
-	           2) Click on Registor Link 
-	           3) Enter All Valid User details in input field of HPQ Registation Step1,Step2,Step3,Step4 and Step5
+	           2) Click on Register Link 
+	           3) Enter All Valid User details in input field of HPQ Registration Step1,Step2,Step3,Step4 and Step5
 	           4) Click on Submit
-	           5) Verify Registation Confirmation Text Actual equal Expected
+	           5) Verify Registration Confirmation Text Actual equal Expected
 	           6) Expected :Should be Displayed after submit - Your Submission has been received
 	            
 	 * @throws Exception 
@@ -38,7 +39,7 @@ public void verifyRegUsingYesStep_3() throws Exception {
 	ActionDriver aDriver = new ActionDriver();
 	aDriver.navigateToApplicationIowaPHQ();
 
-	RegistorPage reg = new RegistorPage(driver);
+	PHQ_general_registerPage reg = new PHQ_general_registerPage(driver);
 
 	// Test Steps:-
 	//reg.clickOnRegistorLink("Registor", 15);
@@ -391,6 +392,7 @@ public void verifyRegUsingYesStep_3() throws Exception {
 	String expectedOutput = "Your Submission has been received";
 
 	String actualOutput = reg.verifyRegSubmis("verifySubmsText", 5);
+	
 
 	if (actualOutput.contentEquals(expectedOutput)) // Expected & actual Verify
 	{

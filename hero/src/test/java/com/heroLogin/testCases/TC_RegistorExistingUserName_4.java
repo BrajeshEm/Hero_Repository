@@ -5,22 +5,23 @@ import org.testng.annotations.Test;
 
 import com.hero.config.ActionDriver;
 import com.hero.config.StartBrowser;
-import com.hero.pageObjects.RegistorPage;
 import com.hero.utilities.getUtil;
+
+import com_heroPHQForm_pageObjects.PHQ_general_registerPage;
 
 public class TC_RegistorExistingUserName_4 extends StartBrowser{
 
 	/***
 	 * 
 	 * @author Brajesh Kumar 
-	           Test Script 03 This Test Script is Created to Vrify Registor Section
+	           Test Script 03 This Test Script is Created to Verify Register Section
 	 *        ************** 
 	 *        Test Steps
 	 *         1) Go to https://herouw.net//Forms/Index?cid=pP1wcnwLK2Q__s_&isghq=false
-	           2) Click on Registor Link after login button
-	           3) Enter All Valid User details in input field of HPQ Registation Step
+	           2) Click on Register Link after login button
+	           3) Enter All Valid User details in input field of HPQ Registration Step
 	           4) Click on Submit
-	           5) Verify the Page Text after  Registation 
+	           5) Verify the Page Text after  Registration 
 	           6) Expected: Details of added user must be Confirm
 	           Expected_O/P : Your Submission has been received 
 	 * @throws Exception 
@@ -36,10 +37,10 @@ public class TC_RegistorExistingUserName_4 extends StartBrowser{
 		ActionDriver aDriver = new ActionDriver();
 		aDriver.navigateToApplicationGeneralPHQ();
 		
-        RegistorPage reg = new RegistorPage(driver);
+		PHQ_general_registerPage reg = new PHQ_general_registerPage(driver);
 		
 		//Test Steps:-
-		reg.clickOnRegistorLink("Registor", 10);
+		reg.clickOnRegisterLink("Registor", 10);
 		reg.clickOnStartReg("Start", 15);
 		
 		/* Go to PHQ_Registration Step1 - Identification */

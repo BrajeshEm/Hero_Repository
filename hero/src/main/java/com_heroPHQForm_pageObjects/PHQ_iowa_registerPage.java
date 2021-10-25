@@ -1,10 +1,9 @@
-package hero.heroPHQForm_pageObjects;
+package com_heroPHQForm_pageObjects;
 
 import java.io.IOException;
 import java.util.Scanner;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -13,26 +12,23 @@ import org.openqa.selenium.support.PageFactory;
 import com.hero.config.ActionDriver;
 import com.hero.utilities.getUtil;
 
-public class phq_utha_RegistorPage {
+public class PHQ_iowa_registerPage {
 	/**
-	 * This class will be created for Restistor Page Object Reprository :OR 
+	 * This class will be created for Register Page Object Repository :OR 
 	 * 
 	 * @throws Exception
 	 * 
 	 */
    
-
-	
     public WebDriver driver;
     ActionDriver adriver ;
-	public  phq_utha_RegistorPage(WebDriver rdriver) {
+	public  PHQ_iowa_registerPage(WebDriver rdriver) {
 		adriver = new ActionDriver();	
 		driver = rdriver;
 			PageFactory.initElements(rdriver, this);
 	}
-	public JavascriptExecutor js;
 	
-	/* Click on Registor and Start Link */ 
+	/* Click on Register and Start Link */ 
 	By regLink               =   By.xpath("//input[@value='Register']");
 	By regStart              =   By.xpath("/html/body/div/div[6]/section/form/div[3]/input");
 
@@ -67,8 +63,8 @@ public class phq_utha_RegistorPage {
 	By textHeightFt        =   By.xpath("//input[@id=\"PHQdemographic_0__Heightft\"]");
 	By textHeightInch      =   By.xpath("//*[@id=\"PHQdemographic_0__Heightinch\"]");
 	By textWeight          =   By.xpath("//*[@id=\"PHQdemographic_0__Weight\"]");
-	By cboxTabacoo         =   By.xpath("//*[@id=\"PHQDemographic_0__tobaccoUseinlastyear\"]"); // click yes
-	By cboxCovReq          =   By.xpath("//input[@id='PHQdemographic_0__DisableZipCode']");// click Medical
+	By cboxTabacoo         =   By.xpath("//*[@id=\"PHQdemographic_0__tobaccoUseinlastyear\"]"); // click yes
+	By cboxCovReq          =   By.xpath("//input[@id='PHQdemographic_0__covergaetype_Medical']");// click Medical
 	
 	// *Within the last 18th months,did you have health insurance coverage? --// Yes/No
 	//--->if Yes
@@ -76,11 +72,10 @@ public class phq_utha_RegistorPage {
 	By clickOnSelAllThatApply       =   By.xpath("//input[@id='Employee']");
 	By TextNameOfCovPer             =   By.xpath("//input[@id='NameofCoveredPerson']");
 	By TextInsCompNameAndAdd        =   By.xpath("//input[@id='Insurancecompny']");
-	
 	/* 3 Medical Conditions and Treatments */
-	By clickOnMedConListYes =  By.xpath("//body/div[@id='container']/div[6]/section[1]/form[1]/div[3]/div/div[1]/input[2]");
-	By clickOnMedConListYes1 =   By.xpath(" //body/div[@id='container']/div[6]/section[1]/form[1]/div[3]/div[31]/div/div[2]/input[2]");
-	By textMedConListNoYes =   By.xpath("//*[@id=\"divpanel\"]/div/div[1]/div[2]/label");
+	By clickOnMedConListYes =  By.xpath(" //body/div[@id='container']/div[6]/section[1]/form[1]/div[3]/div/div[1]/input[2]");
+	By clickOnMedConListNo =   By.xpath(" //body/div[@id='container']/div[6]/section[1]/form[1]/div[3]/div[31]/div/div[2]/input[2]");
+	By clickMedConListtYes =   By.xpath("//body/div[@id='container']/div[6]/section[1]/form[1]/div[1]/div[4]/div[2]/div[4]/div[2]/input[1]");
 	
 	By clickOnMedConListtNo = By.xpath("//body/div[@id='container']/div[6]/section[1]/form[1]/div[1]/div[4]/div[2]/div[5]/div[2]/input[2]"); // sel cancer yes
 	
@@ -361,77 +356,15 @@ public class phq_utha_RegistorPage {
 	By setAIDSHIVDegRcvry = By.xpath("//input[@id='MedicationOthers_22__DegreeofRecovery']");
 	
 	
-    //Other Condition- Currently Hospitalized
-	By setCurHosCon = By.xpath("//input[@id='MedicationOthers_23__conditions']");
-	By setCurHosOnset = By.xpath("//input[@id='MedicationOthers_23__DateofOnset']");
-	By setCurHosTreated = By.xpath("//input[@id='MedicationOthers_23__LastDateTreated']");
-	By setCurHostillTaking = By.xpath("//input[@id='MedicationOthers_23__StillTaking']");
-	By setCurHosDegRcvry = By.xpath("//input[@id='MedicationOthers_23__DegreeofRecovery']");
 	
-
-    //Other Condition- Currently Confined
-	By setCurConCon = By.xpath("//input[@id='MedicationOthers_24__conditions']");
-	By setCurConOnset = By.xpath("//input[@id='MedicationOthers_24__DateofOnset']");
-	By setCurConTreated = By.xpath("//input[@id='MedicationOthers_24__LastDateTreated']");
-	By setCurContillTaking = By.xpath("//input[@id='MedicationOthers_24__StillTaking']");
-	By setCurConDegRcvry = By.xpath("//input[@id='MedicationOthers_24__DegreeofRecovery']");
 	
-	  //Other Condition- Currently Counseling
-		By setCurConsCon = By.xpath("//input[@id='MedicationOthers_25__conditions']");
-		By setCurConsOnset = By.xpath("//input[@id='MedicationOthers_25__DateofOnset']");
-		By setCurConsTreated = By.xpath("//input[@id='MedicationOthers_25__LastDateTreated']");
-		By setCurConstillTaking = By.xpath("//input[@id='MedicationOthers_25__StillTaking']");
-		By setCurConsDegRcvry = By.xpath("//input[@id='MedicationOthers_25__DegreeofRecovery']");
-		
-		 //Other Condition- Condition not on phq
-		By setConNotCon = By.xpath("//input[@id='MedicationOthers_26__conditions']");
-		By setConNotOnset = By.xpath("//input[@id='MedicationOthers_26__DateofOnset']");
-		By setConNotTreated = By.xpath("//input[@id='MedicationOthers_26__LastDateTreated']");
-		By setConNottillTaking = By.xpath("//input[@id='MedicationOthers_26__StillTaking']");
-		By setConNotDegRcvry = By.xpath("//input[@id='MedicationOthers_26__DegreeofRecovery']");
-		
-		 //Other Condition- Circulatory system
-			By setCirSysCon = By.xpath("//input[@id='MedicationOthers_27__conditions']");
-			By setCirSysOnset = By.xpath("//input[@id='MedicationOthers_27__DateofOnset']");
-			By setCirSysTreated = By.xpath("//input[@id='MedicationOthers_27__LastDateTreated']");
-			By setCirSystillTaking = By.xpath("//input[@id='MedicationOthers_27__StillTaking']");
-			By setCirSysDegRcvry = By.xpath("//input[@id='MedicationOthers_27__DegreeofRecovery']");
-			
-			 //Other Condition- Breast
-			By setBreCon = By.xpath("//input[@id='MedicationOthers_28__conditions']");
-			By setBreOnset = By.xpath("//input[@id='MedicationOthers_28__DateofOnset']");
-			By setBreTreated = By.xpath("//input[@id='MedicationOthers_28__LastDateTreated']");
-			By setBretillTaking = By.xpath("//input[@id='MedicationOthers_28__StillTaking']");
-			By setBreDegRcvry = By.xpath("//input[@id='MedicationOthers_28__DegreeofRecovery']");
-			
-			 //Other Condition- Bowel
-			By setBowCon = By.xpath("//input[@id='MedicationOthers_29__conditions']");
-			By setBowOnset = By.xpath("//input[@id='MedicationOthers_29__DateofOnset']");
-			By setBowTreated = By.xpath("//input[@id='MedicationOthers_29__LastDateTreated']");
-			By setBowtillTaking = By.xpath("//input[@id='MedicationOthers_29__StillTaking']");
-			By setBowDegRcvry = By.xpath("//input[@id='MedicationOthers_29__DegreeofRecovery']");
-			
-			 //Other Condition- Bone and joint
-			By setBoneCon = By.xpath("//input[@id='MedicationOthers_30__conditions']");
-			By setBoneOnset = By.xpath("//input[@id='MedicationOthers_30__DateofOnset']");
-			By setBoneTreated = By.xpath("//input[@id='MedicationOthers_30__LastDateTreated']");
-			By setBonetillTaking = By.xpath("//input[@id='MedicationOthers_30__StillTaking']");
-			By setBoneDegRcvry = By.xpath("//input[@id='MedicationOthers_30__DegreeofRecovery']");
-			
-			 //Other Condition- Birth defect
-			By setBirthCon = By.xpath("//input[@id='MedicationOthers_31__conditions']");
-			By setBirthOnset = By.xpath("//input[@id='MedicationOthers_31__DateofOnset']");
-			By setBirthTreated = By.xpath("//input[@id='MedicationOthers_31__LastDateTreated']");
-			By setBirthtillTaking = By.xpath("//input[@id='MedicationOthers_31__StillTaking']");
-			By setBirthDegRcvry = By.xpath("//input[@id='MedicationOthers_31__DegreeofRecovery']");
-			
-			 //Other Condition- Aids Hiv
-			By setAidsCon = By.xpath("//input[@id='MedicationOthers_32__conditions']");
-			By setAidsOnset = By.xpath("//input[@id='MedicationOthers_32__DateofOnset']");
-			By setAidsTreated = By.xpath("//input[@id='MedicationOthers_32__LastDateTreated']");
-			By setAidstillTaking = By.xpath("//input[@id='MedicationOthers_32__StillTaking']");
-			By setAidsDegRcvry = By.xpath("//input[@id='MedicationOthers_32__DegreeofRecovery']");
-			
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -479,12 +412,9 @@ public class phq_utha_RegistorPage {
 		By redBtnOtherReason      =   By.xpath("//input[@value='Other Reason']");
 	
 	
-		/* Setup Method for PHQ_Registor : Identification */
-		
-		getUtil get = new getUtil(driver);
-		
+		/* Setup Method for PHQ_Register : Identification */
 
-		public void clickOnRegistorLink(String eleName, int timeout) throws Exception {
+		public void clickOnRegisterLink(String eleName, int timeout) throws Exception {
 			adriver.click(regLink, timeout, eleName);
 		}
 
@@ -587,7 +517,7 @@ public class phq_utha_RegistorPage {
 			adriver.click(clickOnNext, timeout, eleName);
 		}
 
-		/* Setup Method for PHQ_Registor : 2 Demographic, Build and Tobacco Use */
+		/* Setup Method for PHQ_Register : 2 Demographic, Build and Tobacco Use */
 
 		public void setSSN(String typeData, int timeout, String eleName) throws IOException {
 			driver.findElement(textSSN).clear();
@@ -643,15 +573,26 @@ public class phq_utha_RegistorPage {
 			adriver.Type(TextInsCompNameAndAdd, eleName, timeout, typeData);
 		}
 
-		/* Setup Method for PHQ_Registor : 3 Medical Conditions and Treatments */
-		
+		/* Setup Method for PHQ_Register : 3 Medical Conditions and Treatments */
+
 		public void clickOnMedConListYes(String redBtn, int timeout) throws Exception // sel yes
 		{
-			adriver.clickAndScroll(clickOnMedConListYes, textMedConListNoYes, redBtn);
+			
+			adriver.clickAndScroll(clickOnMedConListYes,clickOnMedConListYes, redBtn);
 		}
-		public void clickOnMedConListYes1(String redBtn, int timeout) throws Exception // sel yes
-		{
-			adriver.clickAndScroll(clickOnMedConListYes1, textMedConListNoYes, redBtn);
+
+		public void clickOnMedConListNo(String redBtn, int timeout) throws Exception {
+		
+			adriver.clickAndScroll(clickOnMedConListNo, clickOnMedConListNo, redBtn);
+		}
+
+		public void clickOnMedConListtYes(String eleName, int timeout) throws Exception {
+			
+			adriver.click(clickMedConListtYes, timeout, eleName);
+		}
+		public void clickOnMedConListtNo(String redBtn, int timeout) throws Exception {
+			
+			adriver.click(clickOnMedConListtNo, timeout, redBtn);
 		}
 
 		// Arthriti
@@ -1527,266 +1468,8 @@ public class phq_utha_RegistorPage {
 		public void setAIDSHIVDegRcvry(String typeData, int timeout, String eleName) throws IOException {
 			adriver.Type(setAIDSHIVDegRcvry, eleName, timeout, typeData);
 		}
-		
-		// Other Condition - Currently Hospitalized
-				public void setCurHosCond(String typeData, int timeout, String eleName) throws IOException {
-					getUtil.acrollIntoView(driver.findElement(setBirthDefectsCond), driver);
-					adriver.Type(setCurHosCon, eleName, timeout, typeData);
-				}
 
-				public void setCurHosOnset(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setCurHosOnset, eleName, timeout, typeData);
-				}
-
-				public void setCurHosTreated(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setCurHosTreated, eleName, timeout, typeData);
-				}
-
-				public void setCurHosStillTaking(String eleName, int timeout) throws Exception {
-					adriver.clickByJs(setCurHostillTaking, timeout, eleName);
-
-				}
-
-				public void setCurHosDegRcvry(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setCurHosDegRcvry, eleName, timeout, typeData);
-				}
-		
-		
-				// Other Condition - Currently Confined
-				public void setCurConCond(String typeData, int timeout, String eleName) throws IOException {
-					getUtil.acrollIntoView(driver.findElement(setBirthDefectsCond), driver);
-					adriver.Type(setCurConCon, eleName, timeout, typeData);
-				}
-
-				public void setCurConOnset(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setCurConOnset, eleName, timeout, typeData);
-				}
-
-				public void setCurConTreated(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setCurConTreated, eleName, timeout, typeData);
-				}
-
-				public void setCurConStillTaking(String eleName, int timeout) throws Exception {
-					adriver.clickByJs(setCurContillTaking, timeout, eleName);
-
-				}
-
-				public void setCurConDegRcvry(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setCurConDegRcvry, eleName, timeout, typeData);
-				}
-		
-				// Other Condition - Currently Counseling
-				public void setCurConsConsd(String typeData, int timeout, String eleName) throws IOException {
-					getUtil.acrollIntoView(driver.findElement(setBirthDefectsCond), driver);
-					adriver.Type(setCurConsCon, eleName, timeout, typeData);
-				}
-
-				public void setCurConsOnset(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setCurConsOnset, eleName, timeout, typeData);
-				}
-
-				public void setCurConsTreated(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setCurConsTreated, eleName, timeout, typeData);
-				}
-
-				public void setCurConsStillTaking(String eleName, int timeout) throws Exception {
-					adriver.clickByJs(setCurConstillTaking, timeout, eleName);
-
-				}
-
-				public void setCurConsDegRcvry(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setCurConsDegRcvry, eleName, timeout, typeData);
-				}
-		
-				// Other Condition - Condition not on phq
-				public void setConNotConsd(String typeData, int timeout, String eleName) throws IOException {
-					getUtil.acrollIntoView(driver.findElement(setBirthDefectsCond), driver);
-					adriver.Type(setConNotCon, eleName, timeout, typeData);
-				}
-
-				public void setConNotOnset(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setConNotOnset, eleName, timeout, typeData);
-				}
-
-				public void setConNotTreated(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setConNotTreated, eleName, timeout, typeData);
-				}
-
-				public void setConNotStillTaking(String eleName, int timeout) throws Exception {
-					adriver.clickByJs(setConNottillTaking, timeout, eleName);
-
-				}
-
-				public void setConNotDegRcvry(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setConNotDegRcvry, eleName, timeout, typeData);
-				}
-		
-				// Other Condition - Condition not on phq
-				public void setCirSysConsd(String typeData, int timeout, String eleName) throws IOException {
-					getUtil.acrollIntoView(driver.findElement(setBirthDefectsCond), driver);
-					adriver.Type(setCirSysCon, eleName, timeout, typeData);
-				}
-
-				public void setCirSysOnset(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setCirSysOnset, eleName, timeout, typeData);
-				}
-
-				public void setCirSysTreated(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setCirSysTreated, eleName, timeout, typeData);
-				}
-
-				public void setCirSysStillTaking(String eleName, int timeout) throws Exception {
-					adriver.clickByJs(setCirSystillTaking, timeout, eleName);
-
-				}
-
-				public void setCirSysDegRcvry(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setCirSysDegRcvry, eleName, timeout, typeData);
-				}
-		
-				// Other Condition - Breast
-				public void setBreConsd(String typeData, int timeout, String eleName) throws IOException {
-					getUtil.acrollIntoView(driver.findElement(setBirthDefectsCond), driver);
-					adriver.Type(setBreCon, eleName, timeout, typeData);
-				}
-
-				public void setBreOnset(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setBreOnset, eleName, timeout, typeData);
-				}
-
-				public void setBreTreated(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setBreTreated, eleName, timeout, typeData);
-				}
-
-				public void setBreStillTaking(String eleName, int timeout) throws Exception {
-					adriver.clickByJs(setBretillTaking, timeout, eleName);
-
-				}
-
-				public void setBreDegRcvry(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setBreDegRcvry, eleName, timeout, typeData);
-				}
-		
-				// Other Condition - Bowel
-				public void setBowConsd(String typeData, int timeout, String eleName) throws IOException {
-					getUtil.acrollIntoView(driver.findElement(setBirthDefectsCond), driver);
-					adriver.Type(setBowCon, eleName, timeout, typeData);
-				}
-
-				public void setBowOnset(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setBowOnset, eleName, timeout, typeData);
-				}
-
-				public void setBowTreated(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setBowTreated, eleName, timeout, typeData);
-				}
-
-				public void setBowStillTaking(String eleName, int timeout) throws Exception {
-					adriver.clickByJs(setBowtillTaking, timeout, eleName);
-
-				}
-
-				public void setBowDegRcvry(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setBowDegRcvry, eleName, timeout, typeData);
-				}
-		
-				// Other Condition - Bone and joint
-				public void setBoneConsd(String typeData, int timeout, String eleName) throws IOException {
-					getUtil.acrollIntoView(driver.findElement(setBirthDefectsCond), driver);
-					adriver.Type(setBoneCon, eleName, timeout, typeData);
-				}
-
-				public void setBoneOnset(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setBoneOnset, eleName, timeout, typeData);
-				}
-
-				public void setBoneTreated(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setBoneTreated, eleName, timeout, typeData);
-				}
-
-				public void setBoneStillTaking(String eleName, int timeout) throws Exception {
-					adriver.clickByJs(setBonetillTaking, timeout, eleName);
-
-				}
-
-				public void setBoneDegRcvry(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setBoneDegRcvry, eleName, timeout, typeData);
-				}
-		
-				// Other Condition - Birth deffect
-				public void setBirthConsd(String typeData, int timeout, String eleName) throws IOException {
-					getUtil.acrollIntoView(driver.findElement(setBirthDefectsCond), driver);
-					adriver.Type(setBirthCon, eleName, timeout, typeData);
-				}
-
-				public void setBirthOnset(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setBirthOnset, eleName, timeout, typeData);
-				}
-
-				public void setBirthTreated(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setBirthTreated, eleName, timeout, typeData);
-				}
-
-				public void setBirthStillTaking(String eleName, int timeout) throws Exception {
-					adriver.clickByJs(setBirthtillTaking, timeout, eleName);
-
-				}
-
-				public void setBirthDegRcvry(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setBirthDegRcvry, eleName, timeout, typeData);
-				}
-		
-		
-				// Other Condition - Aids HIV
-				public void setAidsConsd(String typeData, int timeout, String eleName) throws IOException {
-					getUtil.acrollIntoView(driver.findElement(setBirthDefectsCond), driver);
-					adriver.Type(setAidsCon, eleName, timeout, typeData);
-				}
-
-				public void setAidsOnset(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setAidsOnset, eleName, timeout, typeData);
-				}
-
-				public void setAidsTreated(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setAidsTreated, eleName, timeout, typeData);
-				}
-
-				public void setAidsStillTaking(String eleName, int timeout) throws Exception {
-					adriver.clickByJs(setAidstillTaking, timeout, eleName);
-
-				}
-
-				public void setAidsDegRcvry(String typeData, int timeout, String eleName) throws IOException {
-					adriver.Type(setAidsDegRcvry, eleName, timeout, typeData);
-				}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
-		/* Setup Method for PHQ_Registor : 4 Check Condition Details and Medications */
+		/* Setup Method for PHQ_Register : 4 Check Condition Details and Medications */
 		
 		public void setConditionDiagnosis(String typeData, int timeout, String eleName) throws Exception {
 			adriver.Type(TextConDia, eleName, timeout, typeData);
@@ -1828,7 +1511,7 @@ public class phq_utha_RegistorPage {
 //			adriver.click(clickOninfohedricon, timeout, eleName);
 //		}
 
-		/* Setup Method for PHQ_Registor : 5. Signature and Submission */
+		/* Setup Method for PHQ_Register : 5. Signature and Submission */
 		public void clickOnElecSign(String eleName, int timeout) throws Exception {
 			getUtil.ScrolldownTillPageEnd(driver);
 			adriver.click(clickOnElecSign, timeout, eleName);
@@ -1838,7 +1521,7 @@ public class phq_utha_RegistorPage {
 			adriver.click(clickOnSubmit, timeout, eleName);
 		}
 
-		/* Setup Method for PHQ_Registor : Submission Confirmation Text */
+		/* Setup Method for PHQ_Register : Submission Confirmation Text */
 		public String verifyRegSubmis(String eleName, int timeout) throws Exception {
 			String text = adriver.captureText(verifyRegSubmis, timeout, eleName);
 			return text;

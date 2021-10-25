@@ -8,9 +8,10 @@ import org.testng.annotations.Test;
 
 import com.hero.config.ActionDriver;
 import com.hero.config.StartBrowser;
-import com.hero.pageObjects.RegistorPage;
 import com.hero.utilities.XLUtils;
 import com.hero.utilities.getUtil;
+
+import com_heroApplication_pageObjects.RegistorPage;
 
 public class TC_RegistorDD_004 extends StartBrowser{
 

@@ -1,4 +1,4 @@
-package com.hero.pageObjects;
+package com_heroPHQForm_pageObjects;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -12,9 +12,9 @@ import org.openqa.selenium.support.PageFactory;
 import com.hero.config.ActionDriver;
 import com.hero.utilities.getUtil;
 
-public class RegistorPage {
+public class PHQ_general_registerPage {
 	/**
-	 * This class will be created for Restistor Page Object Reprository :OR 
+	 * This class will be created for Register Page Object Repository :OR 
 	 * 
 	 * @throws Exception
 	 * 
@@ -22,13 +22,13 @@ public class RegistorPage {
    
     public WebDriver driver;
     ActionDriver adriver ;
-	public  RegistorPage(WebDriver rdriver) {
+	public  PHQ_general_registerPage(WebDriver rdriver) {
 		adriver = new ActionDriver();	
 		driver = rdriver;
 			PageFactory.initElements(rdriver, this);
 	}
 	
-	/* Click on Registor and Start Link */ 
+	/* Click on Register and Start Link */ 
 	By regLink               =   By.xpath("//input[@value='Register']");
 	By regStart              =   By.xpath("/html/body/div/div[6]/section/form/div[3]/input");
 
@@ -391,9 +391,9 @@ public class RegistorPage {
 		By redBtnOtherReason      =   By.xpath("//input[@value='Other Reason']");
 	
 	
-		/* Setup Method for PHQ_Registor : Identification */
+		/* Setup Method for PHQ_Register : Identification */
 
-		public void clickOnRegistorLink(String eleName, int timeout) throws Exception {
+		public void clickOnRegisterLink(String eleName, int timeout) throws Exception {
 			adriver.click(regLink, timeout, eleName);
 		}
 
@@ -489,7 +489,7 @@ public class RegistorPage {
 			adriver.click(clickOnNext, timeout, eleName);
 		}
 
-		/* Setup Method for PHQ_Registor : 2 Demographic, Build and Tobacco Use */
+		/* Setup Method for PHQ_Register : 2 Demographic, Build and Tobacco Use */
 
 		public void setSSN(String typeData, int timeout, String eleName) throws IOException {
 			driver.findElement(textSSN).clear();
@@ -520,7 +520,7 @@ public class RegistorPage {
 			adriver.click(cboxTabacoo, timeout, eleName);
 		}
 
-		/* Setup Method for PHQ_Registor : 3 Medical Conditions and Treatments */
+		/* Setup Method for PHQ_Register : 3 Medical Conditions and Treatments */
 
 		public void clickOnMedConListYes(String redBtn, int timeout) throws Exception // sel yes
 		{
@@ -1409,13 +1409,13 @@ public class RegistorPage {
 			adriver.Type(setAIDSHIVDegRcvry, eleName, timeout, typeData);
 		}
 
-		/* Setup Method for PHQ_Registor : 4 Check Condition Details and Medications */
+		/* Setup Method for PHQ_Register : 4 Check Condition Details and Medications */
 
 		public void clickOninfohedricon(String eleName, int timeout) throws Exception {
 			adriver.click(clickOninfohedricon, timeout, eleName);
 		}
 
-		/* Setup Method for PHQ_Registor : 5. Signature and Submission */
+		/* Setup Method for PHQ_Register : 5. Signature and Submission */
 		public void clickOnElecSign(String eleName, int timeout) throws Exception {
 			getUtil.ScrolldownTillPageEnd(driver);
 			adriver.click(clickOnElecSign, timeout, eleName);
@@ -1425,7 +1425,7 @@ public class RegistorPage {
 			adriver.click(clickOnSubmit, timeout, eleName);
 		}
 
-		/* Setup Method for PHQ_Registor : Submission Confirmation Text */
+		/* Setup Method for PHQ_Register : Submission Confirmation Text */
 		public String verifyRegSubmis(String eleName, int timeout) throws Exception {
 			String text = adriver.captureText(verifyRegSubmis, timeout, eleName);
 			return text;

@@ -3,8 +3,10 @@ package com.hero.config;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
-import com.hero.pageObjects.LoginPage;
+
 import com.hero.utilities.Readconfig;
+
+import com_heroApplication_pageObjects.LoginPage;
 
 public class CommonUses {
 

@@ -1,4 +1,4 @@
-package com.hero.pageObjects;
+package com_heroApplication_pageObjects;
 
 import java.io.IOException;
 import java.util.Scanner;

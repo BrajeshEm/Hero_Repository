@@ -1,4 +1,4 @@
-package hero.heroPHQForm_pageObjects;
+package com_heroApplication_pageObjects;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -12,7 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.hero.config.ActionDriver;
 import com.hero.utilities.getUtil;
 
-public class phq_iowa_RegistorPage {
+public class RegistorPage {
 	/**
 	 * This class will be created for Restistor Page Object Reprository :OR 
 	 * 
@@ -22,7 +22,7 @@ public class phq_iowa_RegistorPage {
    
     public WebDriver driver;
     ActionDriver adriver ;
-	public  phq_iowa_RegistorPage(WebDriver rdriver) {
+	public  RegistorPage(WebDriver rdriver) {
 		adriver = new ActionDriver();	
 		driver = rdriver;
 			PageFactory.initElements(rdriver, this);
@@ -36,18 +36,17 @@ public class phq_iowa_RegistorPage {
 	By TextFirstName         =   By.xpath("//*[@name='objEmployee.FirstName']");
 	By textLastName          =   By.xpath("//*[@name='objEmployee.LastName']");
 	By textSuffix            =   By.xpath("//*[@id='objEmployee_Suffix']");
-	By textDaytymPh          =   By.xpath("/html/body/div[1]/div[6]/section/form/div[1]/div[5]/div[2]/input");
+	By textDaytymPh          =   By.xpath("//input[@id='objEmployee_DayTimePhone']");
 	By sDatedpdwn            =   By.xpath("//*[@name='objEmployee.DateofHire']");
 	
 	//*Are you planning to enroll in your employer's health insurance plan? -- Yes/No
 	//--->if Yes
 	By redBtnHelInsYes      =   By.xpath("//*[@id=\"enroll\"]");
 	By sdepen               =   By.xpath("//*[@id=\"objEmployee_NoofDependents\"]");
+	By martStatus          =     By.xpath("//select[@id='objEmployee_empDetail_MaritalStatus']");
 	By textUserName         =   By.xpath("//*[@id=\"objEmployee_empDetail_UserName\"]");
 	By textPswrd            =   By.xpath("//*[@id=\"objEmployee_empDetail_Password\"]");
 	By textConfrmPswrd      =   By.xpath("//*[@id=\"objEmployee_empDetail_ConfirmPassword\"]");
-	By textMarStatus        =   By.xpath("//select[@id='objEmployee_empDetail_MaritalStatus']");
-	By textEmpStatus        =   By.xpath("//select[@id='objEmployee_empDetail_employmentstatus']");
 	By textDOB              =   By.xpath("//*[@id=\"objEmployee_empDetail_DateofBirth\"]");
 	By textEmail            =   By.xpath("//*[@id=\"objEmployee_empDetail_Email\"]");
 	By textAddress1         =   By.xpath("//*[@id=\"objEmployee_empDetail_Address1\"]");
@@ -58,26 +57,19 @@ public class phq_iowa_RegistorPage {
     By clickOnNext          =   By.xpath("//*[@id=\"nextbutton\"]");
     
     /* 2 Demographic, Build and Tobacco Use */
-    By textSSN             =   By.xpath("//input[@id='PHQdemographic_0__SSNRequired']");
-	By sGender             =   By.xpath("//*[@id=\"PHQdemographic_0__Gender\"]"); //dropdown
-	By textHeightFt        =   By.xpath("//input[@id=\"PHQdemographic_0__Heightft\"]");
-	By textHeightInch      =   By.xpath("//*[@id=\"PHQdemographic_0__Heightinch\"]");
-	By textWeight          =   By.xpath("//*[@id=\"PHQdemographic_0__Weight\"]");
+    By textSSN             =   By.xpath("//*[@id=\"PHQdemographic_0__SSNRequired\"]");
+	By sGender             =   By.xpath("//select[contains(@data-val,'true')]"); //dropdown
+	By textHeightFt        =   By.xpath("//input[@id=\"PHQdemographic_0__Heightft\"]|//input[@data-val-regex='Enter only numbers']");
+	By textHeightInch      =   By.xpath("//*[@id=\"PHQdemographic_0__Heightinch\"]|//input[@data-val-number='The field Htinch must be a number.']");
+	By textWeight          =   By.xpath("//*[@id=\"PHQdemographic_0__Weight\"]|//input[@data-val-number='The field Weight must be a number.']");
 	By cboxTabacoo         =   By.xpath("//*[@id=\"PHQdemographic_0__tobaccoUseinlastyear\"]"); // click yes
-	By cboxCovReq          =   By.xpath("//input[@id='PHQdemographic_0__covergaetype_Medical']");// click Medical
 	
-	// *Within the last 18th months,did you have health insurance coverage? --// Yes/No
-	//--->if Yes
-	By redBtnHelInsCoverageYes      =   By.xpath("//body/div[@id='container']/div[6]/section[1]/form[1]/div[2]/div[2]/div[2]/div[1]/div[2]/input[1]]");
-	By clickOnSelAllThatApply       =   By.xpath("//input[@id='Employee']");
-	By TextNameOfCovPer             =   By.xpath("//input[@id='NameofCoveredPerson']");
-	By TextInsCompNameAndAdd        =   By.xpath("//input[@id='Insurancecompny']");
 	/* 3 Medical Conditions and Treatments */
-	By clickOnMedConListYes =  By.xpath(" //body/div[@id='container']/div[6]/section[1]/form[1]/div[3]/div/div[1]/input[2]");
-	By clickOnMedConListNo =   By.xpath(" //body/div[@id='container']/div[6]/section[1]/form[1]/div[3]/div[31]/div/div[2]/input[2]");
-	By clickMedConListtYes =   By.xpath("//body/div[@id='container']/div[6]/section[1]/form[1]/div[1]/div[4]/div[2]/div[4]/div[2]/input[1]");
+	By clickOnMedConListYes =  By.xpath("/html/body/div/div[6]/section/form/div[1]/div/div[2]/input[1]");
+	By clickOnMedConListNo =   By.xpath("/html/body/div/div[6]/section/form/div[1]/div/div[2]/input[2]");
+	By textMedConListNoYes =   By.xpath("//*[@id=\"divpanel\"]/div/div[1]/div[2]/label");
 	
-	By clickOnMedConListtNo = By.xpath("//body/div[@id='container']/div[6]/section[1]/form[1]/div[1]/div[4]/div[2]/div[5]/div[2]/input[2]"); // sel cancer yes
+	By clickOnMedConListCancerYes = By.xpath("//*[@id=\"objMedical_Cancer\"]"); // sel cancer yes
 	
 	                                //Arthritis
 	By textArthritiLocation                =        By.xpath("/html/body/div[1]/div[6]/section/form/main/div[1]/div[3]/table[1]/tbody/tr/td[2]/input");
@@ -369,20 +361,7 @@ public class phq_iowa_RegistorPage {
 	
 	
 	/* 4 Check Condition Details and Medications */
-	//By clickOninfohedricon =   By.xpath("//*[@id=\"Otherinfoheadericon\"]");
-	By TextConDia            =   By.xpath("//input[@id='MedicationOthers_0__conditions']");
-	By setBackDisDateOnsett          =     By.xpath("//input[@id='MedicationOthers_0__DateofOnset']");
-	By setBackDisLastDatTreatedd     =     By.xpath("//input[@id='MedicationOthers_0__LastDateTreated']");
-	
-	By TextConDiaa                    =  By.xpath("//input[@id='MedicationOthers_1__conditions']");
-	By setBackDisDateOnsettt          =  By.xpath("//input[@id='MedicationOthers_1__DateofOnset']");
-	By setBackDisLastDatTreateddd     =  By.xpath("//input[@id='MedicationOthers_1__LastDateTreated']");
-	
-	By eleCod1 = By.xpath("//tbody/tr[@id='row_0']/td[6]/span[1]/span[1]/span[1]/ul[1]/li[1]");
-	By eleValueCod1 = By.xpath("//li[normalize-space()='5-HTP TRYPTOPHAN']");
-	By eleCod2 = By.xpath("//tbody/tr[@id='row_0']/td[6]/span[1]/span[1]/span[1]/ul[1]/li[1]");
-	By eleValueCod2 = By.xpath("//li[normalize-space()='8-MOP']");
-
+	By clickOninfohedricon =   By.xpath("//*[@id=\"Otherinfoheadericon\"]");
 	
 	/* 5. Signature and Submission */
 	By clickOnElecSign    =   By.xpath("//*[@id=\"dvelectronicsignature\"]/input[1]");
@@ -437,9 +416,10 @@ public class phq_iowa_RegistorPage {
 		}
 
 		public void setMobNumber(String typeData, int timeout, String eleName) throws Exception {
-			driver.findElement(textDaytymPh).clear();
-			driver.findElement(textDaytymPh).click();
-			adriver.Type(textDaytymPh, eleName, timeout, typeData);
+//			driver.findElement(textDaytymPh).clear();
+//			driver.findElement(textDaytymPh).click();
+//			adriver.Type(textDaytymPh, eleName, timeout, typeData);
+			getUtil.enterTextByJS(typeData, driver.findElement(textDaytymPh), driver);
 		}
 
 		public void setDateHire(String typeData, int timeout, String eleName) throws Exception {
@@ -457,7 +437,7 @@ public class phq_iowa_RegistorPage {
 
 		public void setDependent(String eleName, int timeout) throws IOException {
 			adriver.selectByDropdwn(sdepen, timeout, eleName);
-			;
+			
 		}
 
 		public void setUserName(String typeData, int timeout, String eleName) throws IOException {
@@ -471,18 +451,10 @@ public class phq_iowa_RegistorPage {
 		public void setConfrmPswrd(String typeData, int timeout, String eleName) throws IOException {
 			adriver.Type(textConfrmPswrd, eleName, timeout, typeData);
 		}
-		
 		public void setMaritalStatus(String eleName, int timeout) throws IOException {
-			adriver.selectByDropdwn(textMarStatus, timeout, eleName);
+			adriver.selectByDropdwn(martStatus, timeout, eleName);
 			;
 		}
-		
-		public void setEmpStatus(String eleName, int timeout) throws IOException {
-			adriver.selectByDropdwn(textEmpStatus, timeout, eleName);
-			;
-		}
-
-
 		public void setDob(String typeData, int timeout, String eleName) throws IOException {
 			adriver.Type(textDOB, eleName, timeout, typeData);
 		}
@@ -526,7 +498,7 @@ public class phq_iowa_RegistorPage {
 		}
 
 		public void setGender(String eleName, int timeout) throws IOException {
-			driver.findElement(sGender).click();
+			
 			adriver.selectByDropdwn(sGender, timeout, eleName);
 			;
 		}
@@ -547,52 +519,20 @@ public class phq_iowa_RegistorPage {
 			getUtil.ScrolldownTillPageEnd(driver); // scroll for next otion
 			adriver.click(cboxTabacoo, timeout, eleName);
 		}
-		
-		public void checkCoverageReq(String eleName, int timeout) throws Exception {
-			getUtil.ScrolldownTillPageEnd(driver); // scroll for next otion
-			adriver.click(cboxCovReq, timeout, eleName);
-		}
-		
-		// *Within the last 18th months,did you have health insurance coverage? --
-				// Yes/No
-
-	    // --->if Yes
-		public void clickOnHethInsCoverageYes(String eleName, int timeout) throws Exception {
-			adriver.click(redBtnHelInsCoverageYes, timeout, eleName);
-		}
-		public void clickOnSelectAllThatApply(String eleName, int timeout) throws Exception {
-			getUtil.ScrolldownTillPageEnd(driver);
-			adriver.click(clickOnSelAllThatApply, timeout, eleName);
-		}
-		
-		public void setNameOfCovPerson(String typeData, int timeout, String eleName) throws Exception {
-			adriver.Type(TextNameOfCovPer, eleName, timeout, typeData);
-		}
-		
-		public void setInsCompNameAndAdd(String typeData, int timeout, String eleName) throws Exception {
-			adriver.Type(TextInsCompNameAndAdd, eleName, timeout, typeData);
-		}
 
 		/* Setup Method for PHQ_Registor : 3 Medical Conditions and Treatments */
 
 		public void clickOnMedConListYes(String redBtn, int timeout) throws Exception // sel yes
 		{
-			
-			adriver.clickAndScroll(clickOnMedConListYes,clickOnMedConListYes, redBtn);
+			adriver.clickAndScroll(clickOnMedConListYes, textMedConListNoYes, redBtn);
 		}
 
 		public void clickOnMedConListNo(String redBtn, int timeout) throws Exception {
-		
-			adriver.clickAndScroll(clickOnMedConListNo, clickOnMedConListNo, redBtn);
+			adriver.clickAndScroll(clickOnMedConListNo, textMedConListNoYes, redBtn);
 		}
 
-		public void clickOnMedConListtYes(String eleName, int timeout) throws Exception {
-			
-			adriver.click(clickMedConListtYes, timeout, eleName);
-		}
-		public void clickOnMedConListtNo(String redBtn, int timeout) throws Exception {
-			
-			adriver.click(clickOnMedConListtNo, timeout, redBtn);
+		public void clickOnMedConListCancerYes(String eleName, int timeout) throws Exception {
+			adriver.click(clickOnMedConListCancerYes, timeout, eleName);
 		}
 
 		// Arthriti
@@ -1470,46 +1410,10 @@ public class phq_iowa_RegistorPage {
 		}
 
 		/* Setup Method for PHQ_Registor : 4 Check Condition Details and Medications */
-		
-		public void setConditionDiagnosis(String typeData, int timeout, String eleName) throws Exception {
-			adriver.Type(TextConDia, eleName, timeout, typeData);
-		}
-		
-		public void setBackDisDateOnsett(String typeData, int timeout, String eleName) throws IOException {
-			adriver.Type(setBackDisDateOnsett, eleName, timeout, typeData);
-		}
 
-		public void selBackDisLastDatTreatedd(String typeData, int timeout, String eleName) throws IOException {
-			adriver.Type(setBackDisLastDatTreatedd, eleName, timeout, typeData);
+		public void clickOninfohedricon(String eleName, int timeout) throws Exception {
+			adriver.click(clickOninfohedricon, timeout, eleName);
 		}
-		
-		public void setConditionDiagnosiss(String typeData, int timeout, String eleName) throws Exception {
-			adriver.Type(TextConDiaa, eleName, timeout, typeData);
-		}
-		
-		public void setBackDisDateOnsettt(String typeData, int timeout, String eleName) throws IOException {
-			adriver.Type(setBackDisDateOnsettt, eleName, timeout, typeData);
-		}
-
-		public void selBackDisLastDatTreateddd(String typeData, int timeout, String eleName) throws IOException {
-			adriver.Type(setBackDisLastDatTreateddd, eleName, timeout, typeData);
-		}
-
-		
-
-		public void setTrtmentDrugCond1(String eleName, int timeout) throws Exception {
-		adriver.click(eleCod1, timeout, eleName);
-		adriver.clickByAction(eleValueCod1, timeout, eleName);
-		}
-
-		public void setTrtmentDrugCond2(String eleName, int timeout) throws Exception {
-		adriver.click(eleCod2, timeout, eleName);
-		adriver.clickByAction(eleValueCod2, timeout, eleName);
-		}
-//
-//		public void clickOninfohedricon(String eleName, int timeout) throws Exception {
-//			adriver.click(clickOninfohedricon, timeout, eleName);
-//		}
 
 		/* Setup Method for PHQ_Registor : 5. Signature and Submission */
 		public void clickOnElecSign(String eleName, int timeout) throws Exception {

@@ -6,8 +6,9 @@ import org.testng.annotations.Test;
 
 import com.hero.config.ActionDriver;
 import com.hero.config.StartBrowser;
-import com.hero.pageObjects.RegistorPage;
 import com.hero.utilities.getUtil;
+
+import com_heroPHQForm_pageObjects.PHQ_general_registerPage;
 
 public class TC_RegSelMedicaid_012 extends StartBrowser {
 
@@ -17,10 +18,10 @@ public class TC_RegSelMedicaid_012 extends StartBrowser {
 		StartBrowser.test = StartBrowser.test.createNode(" Personal Health Questionnaire(PHQ) Registration  ");
 		ActionDriver aDriver = new ActionDriver();
 		aDriver.navigateToApplicationGeneralPHQ();
-		RegistorPage reg = new RegistorPage(driver);
+		PHQ_general_registerPage reg = new PHQ_general_registerPage(driver);
 
 		// Test Steps:-
-		reg.clickOnRegistorLink("Registor", 10);
+		reg.clickOnRegisterLink("Registor", 10);
 		reg.clickOnStartReg("Start", 15);
 
 		/* Go to PHQ_Registration Step1 - Identification */

@@ -1,4 +1,4 @@
-package com.hero.pageObjects;
+package com_heroGHQForm_pageObjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -6,9 +6,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.hero.config.ActionDriver;
 
-public class GHQ_RegistorPage {
+public class GHQ_registerPage {
 	/**
-	 * This class will be created for Restistor Page Object Reprository :OR 
+	 * This class will be created for Registor Page Object Repository :OR 
 	 * 
 	 * @throws Exception
 	 * 
@@ -16,7 +16,7 @@ public class GHQ_RegistorPage {
    
     public WebDriver driver;
     ActionDriver adriver ;
-	public  GHQ_RegistorPage(WebDriver rdriver) {
+	public  GHQ_registerPage(WebDriver rdriver) {
 		adriver = new ActionDriver();	
 		driver = rdriver;
 			PageFactory.initElements(rdriver, this);

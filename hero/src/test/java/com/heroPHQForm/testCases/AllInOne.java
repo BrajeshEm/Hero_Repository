@@ -8,7 +8,7 @@ import com.hero.config.ActionDriver;
 import com.hero.config.StartBrowser;
 import com.hero.utilities.getUtil;
 
-import hero.heroPHQForm_pageObjects.phq_iowa_RegistorPage;
+import com_heroPHQForm_pageObjects.PHQ_iowa_registerPage;
 
 public class AllInOne extends StartBrowser{
 	/***
@@ -37,10 +37,10 @@ public class AllInOne extends StartBrowser{
 		StartBrowser.test = StartBrowser.test.createNode(" Personal Health Questionnaire(PHQ) Registration  ");
 		ActionDriver aDriver = new ActionDriver();
 		aDriver.navigateToApplication();
-		phq_iowa_RegistorPage reg = new phq_iowa_RegistorPage(driver);
+		PHQ_iowa_registerPage reg = new PHQ_iowa_registerPage(driver);
 
 		// Test Steps:-
-		reg.clickOnRegistorLink("Registor", 10);
+		reg.clickOnRegisterLink("Registor", 10);
 		reg.clickOnStartReg("Start", 15);
 
 		/* Go to PHQ_Registration Step1 - Identification */
@@ -86,10 +86,10 @@ public class AllInOne extends StartBrowser{
         StartBrowser.test = StartBrowser.test.createNode(" Personal Health Questionnaire(PHQ) Registration  ");
         ActionDriver aDriver = new ActionDriver();
         aDriver.navigateToApplication();
-        phq_iowa_RegistorPage reg = new phq_iowa_RegistorPage(driver); 
+        PHQ_iowa_registerPage reg = new PHQ_iowa_registerPage(driver); 
         
 		//Test Steps:-
-		reg.clickOnRegistorLink("Registor", 10);
+		reg.clickOnRegisterLink("Registor", 10);
 		reg.clickOnStartReg("Start", 15);
 		
 		/* Go to PHQ_Registration Step1 - Identification */
@@ -139,10 +139,10 @@ public class AllInOne extends StartBrowser{
         StartBrowser.test = StartBrowser.test.createNode(" Personal Health Questionnaire(PHQ) Registration  ");
         ActionDriver aDriver = new ActionDriver();
         aDriver.navigateToApplication();
-        phq_iowa_RegistorPage reg = new phq_iowa_RegistorPage(driver); 
+        PHQ_iowa_registerPage reg = new PHQ_iowa_registerPage(driver); 
         
 		//Test Steps:-
-		reg.clickOnRegistorLink("Registor", 10);
+		reg.clickOnRegisterLink("Registor", 10);
 		reg.clickOnStartReg("Start", 15);
 		
 		/* Go to PHQ_Registration Step1 - Identification */
@@ -190,10 +190,10 @@ public class AllInOne extends StartBrowser{
         StartBrowser.test = StartBrowser.test.createNode(" Personal Health Questionnaire(PHQ) Registration  ");
         ActionDriver aDriver = new ActionDriver();
         aDriver.navigateToApplication();
-        phq_iowa_RegistorPage reg = new phq_iowa_RegistorPage(driver); 
+        PHQ_iowa_registerPage reg = new PHQ_iowa_registerPage(driver); 
         
 		//Test Steps:-
-		reg.clickOnRegistorLink("Registor", 10);
+		reg.clickOnRegisterLink("Registor", 10);
 		reg.clickOnStartReg("Start", 15);
 		
 		/* Go to PHQ_Registration Step1 - Identification */
@@ -243,10 +243,10 @@ public class AllInOne extends StartBrowser{
 		StartBrowser.test = StartBrowser.test.createNode(" Personal Health Questionnaire(PHQ) Registration  ");
 		ActionDriver aDriver = new ActionDriver();
 		aDriver.navigateToApplication();
-		phq_iowa_RegistorPage reg = new phq_iowa_RegistorPage(driver);
+		PHQ_iowa_registerPage reg = new PHQ_iowa_registerPage(driver);
 
 		// Test Steps:-
-		reg.clickOnRegistorLink("Registor", 10);
+		reg.clickOnRegisterLink("Registor", 10);
 		reg.clickOnStartReg("Start", 15);
 
 		/* Go to PHQ_Registration Step1 - Identification */
@@ -293,10 +293,10 @@ public class AllInOne extends StartBrowser{
 		StartBrowser.test = StartBrowser.test.createNode(" Personal Health Questionnaire(PHQ) Registration  ");
 		ActionDriver aDriver = new ActionDriver();
 		aDriver.navigateToApplication();
-		phq_iowa_RegistorPage reg = new phq_iowa_RegistorPage(driver);
+		PHQ_iowa_registerPage reg = new PHQ_iowa_registerPage(driver);
 
 		// Test Steps:-
-		reg.clickOnRegistorLink("Registor", 10);
+		reg.clickOnRegisterLink("Registor", 10);
 		reg.clickOnStartReg("Start", 15);
 
 		/* Go to PHQ_Registration Step1 - Identification */
@@ -341,10 +341,10 @@ public class AllInOne extends StartBrowser{
 		StartBrowser.test = StartBrowser.test.createNode(" Personal Health Questionnaire(PHQ) Registration  ");
 		ActionDriver aDriver = new ActionDriver();
 		aDriver.navigateToApplication();
-		phq_iowa_RegistorPage reg = new phq_iowa_RegistorPage(driver);
+		PHQ_iowa_registerPage reg = new PHQ_iowa_registerPage(driver);
 
 		// Test Steps:-
-		reg.clickOnRegistorLink("Registor", 10);
+		reg.clickOnRegisterLink("Registor", 10);
 		reg.clickOnStartReg("Start", 15);
 
 		/* Go to PHQ_Registration Step1 - Identification */
@@ -388,10 +388,10 @@ public class AllInOne extends StartBrowser{
 		StartBrowser.test = StartBrowser.test.createNode(" Personal Health Questionnaire(PHQ) Registration  ");
 		ActionDriver aDriver = new ActionDriver();
 		aDriver.navigateToApplication();
-		phq_iowa_RegistorPage reg = new phq_iowa_RegistorPage(driver);
+		PHQ_iowa_registerPage reg = new PHQ_iowa_registerPage(driver);
 
 		// Test Steps:-
-		reg.clickOnRegistorLink("Registor", 10);
+		reg.clickOnRegisterLink("Registor", 10);
 		reg.clickOnStartReg("Start", 15);
 
 		/* Go to PHQ_Registration Step1 - Identification */
@@ -436,10 +436,10 @@ public class AllInOne extends StartBrowser{
         StartBrowser.test = StartBrowser.test.createNode(" Personal Health Questionnaire(PHQ) Registration  ");
         ActionDriver aDriver = new ActionDriver();
         aDriver.navigateToApplication();
-        phq_iowa_RegistorPage reg = new phq_iowa_RegistorPage(driver); 
+        PHQ_iowa_registerPage reg = new PHQ_iowa_registerPage(driver); 
         
 		//Test Steps:-
-		reg.clickOnRegistorLink("Registor", 10);
+		reg.clickOnRegisterLink("Registor", 10);
 		reg.clickOnStartReg("Start", 15);
 		
 		/* Go to PHQ_Registration Step1 - Identification */
@@ -489,10 +489,10 @@ public class AllInOne extends StartBrowser{
 		StartBrowser.test = StartBrowser.test.createNode(" Personal Health Questionnaire(PHQ) Registration  ");
 		ActionDriver aDriver = new ActionDriver();
 		aDriver.navigateToApplication();
-		phq_iowa_RegistorPage reg = new phq_iowa_RegistorPage(driver);
+		PHQ_iowa_registerPage reg = new PHQ_iowa_registerPage(driver);
 
 		// Test Steps:- 
-		reg.clickOnRegistorLink("Registor", 10);
+		reg.clickOnRegisterLink("Registor", 10);
 		reg.clickOnStartReg("Start", 15);
 
 		/* Go to PHQ_Registration Step1 - Identification */

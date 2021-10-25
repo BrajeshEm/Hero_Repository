@@ -58,10 +58,10 @@ public class RegistorPage {
     
     /* 2 Demographic, Build and Tobacco Use */
     By textSSN             =   By.xpath("//*[@id=\"PHQdemographic_0__SSNRequired\"]");
-	By sGender             =   By.xpath("//*[@id=\"PHQdemographic_0__Gender\"]"); //dropdown
-	By textHeightFt        =   By.xpath("//input[@id=\"PHQdemographic_0__Heightft\"]");
-	By textHeightInch      =   By.xpath("//*[@id=\"PHQdemographic_0__Heightinch\"]");
-	By textWeight          =   By.xpath("//*[@id=\"PHQdemographic_0__Weight\"]");
+	By sGender             =   By.xpath("//select[contains(@data-val,'true')]"); //dropdown
+	By textHeightFt        =   By.xpath("//input[@id=\"PHQdemographic_0__Heightft\"]|//input[@data-val-regex='Enter only numbers']");
+	By textHeightInch      =   By.xpath("//*[@id=\"PHQdemographic_0__Heightinch\"]|//input[@data-val-number='The field Htinch must be a number.']");
+	By textWeight          =   By.xpath("//*[@id=\"PHQdemographic_0__Weight\"]|//input[@data-val-number='The field Weight must be a number.']");
 	By cboxTabacoo         =   By.xpath("//*[@id=\"PHQdemographic_0__tobaccoUseinlastyear\"]"); // click yes
 	
 	/* 3 Medical Conditions and Treatments */
@@ -498,7 +498,7 @@ public class RegistorPage {
 		}
 
 		public void setGender(String eleName, int timeout) throws IOException {
-			driver.findElement(sGender).click();
+			
 			adriver.selectByDropdwn(sGender, timeout, eleName);
 			;
 		}

@@ -18,8 +18,8 @@ import com.hero.config.StartBrowser;
 public class getUtil extends StartBrowser{
    
 	public WebDriver ldriver;
-	public static long PAGE_LOAD_TIMEOUT = 20000;
-	public static long IMPLICITY_WAIT = 20000;
+	public static long PAGE_LOAD_TIMEOUT = 20;
+	public static long IMPLICITY_WAIT = 20;
 	
 	public getUtil(WebDriver rdriver) {
 		this.ldriver = rdriver;

@@ -4,6 +4,7 @@ package com.heroIowaPHQForms.testCases;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.hero.config.ActionDriver;
@@ -40,8 +41,8 @@ public void verifyRegUsingYesStep_3() throws Exception {
 	RegistorPage reg = new RegistorPage(driver);
 
 	// Test Steps:-
-	reg.clickOnRegistorLink("Registor", 10);
-	reg.clickOnStartReg("Start", 15);
+	//reg.clickOnRegistorLink("Registor", 15);
+	//reg.clickOnStartReg("Start", 15);
 
 	/* Go to PHQ_Registration Step1 - Identification */
 	StartBrowser.test = StartBrowser.test
@@ -60,6 +61,9 @@ public void verifyRegUsingYesStep_3() throws Exception {
 	reg.setUserName(uname, 5, "UserName");
 	reg.setPassword("Hero@122", 5, "Password");
 	reg.setConfrmPswrd("Hero@122", 5, "Password");
+	WebElement ele = driver.findElement(By.xpath("//select[@id='objEmployee_empDetail_employmentstatus']"));
+	Select dropdown = new Select(ele);
+	dropdown.selectByVisibleText("Full-Time");
 	reg.setDob("07/07/1981", 5, " DOB ");
 	reg.setEmailId("radhe.kumar@gmail.com", 5, "Email Id");
 	reg.setAddress1("Address: 11255 Trade", 5, "Address1");
@@ -68,7 +72,7 @@ public void verifyRegUsingYesStep_3() throws Exception {
 	reg.setState("CA", 30);
 	reg.setZip("95742", 10, "Zip");
 	reg.clickOnNext(" Next ", 10);
-
+	
 	/* Go to PHQ_Registration Step2 - Demographic, Build and Tobacco Use */
 	StartBrowser.test = StartBrowser.test
 			.createNode(" Go to PHQ_Registration Step2 - Demographic, Build and Tobacco Use ");

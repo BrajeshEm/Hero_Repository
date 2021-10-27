@@ -42,7 +42,7 @@ public void verifyRegUsingYesStep_3() throws Exception {
 	PHQ_general_registerPage reg = new PHQ_general_registerPage(driver);
 
 	// Test Steps:-
-	//reg.clickOnRegistorLink("Registor", 15);
+	//reg.clickOnRegistorLink("Register", 15);
 	//reg.clickOnStartReg("Start", 15);
 
 	/* Go to PHQ_Registration Step1 - Identification */

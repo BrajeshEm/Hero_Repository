@@ -3,9 +3,8 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.heroIowaPHQForms.testCases.TC_IowaMedicalConditionsTreatments_Yes_015">
+      <class name="com.heroPHQForm.testCases.TC_VerifyRegFormPHQ_IOWA_1MedCondTrtmntYes_003">
         <methods>
-          <include name="verifyRegUsingYesStep_3"/>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
@@ -14,8 +13,9 @@
           <include name="afterSuite"/>
           <include name="beforeClass"/>
           <include name="extentReporGenerator"/>
+          <include name="VerifyRegForm1MedCondTrtmntYes_3"/>
         </methods>
-      </class> <!-- com.heroIowaPHQForms.testCases.TC_IowaMedicalConditionsTreatments_Yes_015 -->
+      </class> <!-- com.heroPHQForm.testCases.TC_VerifyRegFormPHQ_IOWA_1MedCondTrtmntYes_003 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

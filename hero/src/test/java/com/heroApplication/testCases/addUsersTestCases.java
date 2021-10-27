@@ -1,11 +1,12 @@
-package com.heroGeneral.testCases;
+package com.heroApplication.testCases;
 
 import org.testng.annotations.Test;
 
-import com.hero.config.ActionDriver;
 import com.hero.config.CommonUses;
 import com.hero.config.StartBrowser;
-import com.hero.pageObjects.addUsersPage;
+
+import com_heroApplication_pageObjects.addUsersPage;
+
 
 
 public class addUsersTestCases extends StartBrowser {

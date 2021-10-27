@@ -1,18 +1,13 @@
-package com.hero.pageObjects;
+package com_heroPHQForm_pageObjects;
 
 import java.io.IOException;
-import java.util.Scanner;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
 import com.hero.config.ActionDriver;
-import com.hero.utilities.getUtil;
 
-public class IOWAPageObject {
+public class PHQ_iowa_registerPage {
 	/**
 	 * This class will be created for Restistor Page Object Reprository :OR 
 	 * 
@@ -22,7 +17,7 @@ public class IOWAPageObject {
    
     public WebDriver driver;
     ActionDriver adriver ;
-	public  IOWAPageObject(WebDriver rdriver) {
+	public  PHQ_iowa_registerPage(WebDriver rdriver) {
 		adriver = new ActionDriver();	
 		driver = rdriver;
 			PageFactory.initElements(rdriver, this);

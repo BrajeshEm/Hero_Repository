@@ -7626,3 +7626,55 @@ OrManage Users Vs The user has been successfully created.
 2021-10-25 18:47:44,342 [main] INFO Hero_Index - Performed click operation on : Aids/Hiv
 2021-10-25 18:47:45,697 [main] ERROR Hero_Index - Performed click operation on : No
 2021-10-25 18:47:45,858 [main] INFO Hero_Index - Performed click operation on :  Next 
+2021-10-26 00:27:37,030 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 95.0.4638.17 (since Google Chrome 95 is installed in your machine)
+2021-10-26 00:27:37,044 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Shivangi Dwivedi\.m2\repository\webdriver\chromedriver\win32\95.0.4638.17\chromedriver.exe
+2021-10-26 00:27:47,141 [main] INFO Hero_Index - Successfully navigate to URL : https://herouw.net/PHQ/PHQStep1?q=IXLCn9uitjRg8XkOMIzO06Kst49N9xAlP__i_LIaKjC6Sw__s_
+2021-10-26 00:27:47,533 [main] INFO Hero_Index - Successfuly perpormed type action in text box : First Name with data Hero
+2021-10-26 00:27:47,802 [main] INFO Hero_Index - Successfuly perpormed type action in text box : Last Name with data Index
+2021-10-26 00:27:48,036 [main] INFO Hero_Index - Successfuly perpormed type action in text box : Suffix Name with data Sr
+2021-10-26 00:27:48,256 [main] INFO Hero_Index - Performed click operation on : Yes
+2021-10-26 00:27:48,436 [main] INFO Hero_Index - Performed select operation to : 0
+2021-10-26 00:27:48,698 [main] INFO Hero_Index - Successfuly perpormed type action in text box : UserName with data kMRig
+2021-10-26 00:27:48,959 [main] INFO Hero_Index - Successfuly perpormed type action in text box : Password with data Hero@122
+2021-10-26 00:27:49,204 [main] INFO Hero_Index - Successfuly perpormed type action in text box : Password with data Hero@122
+2021-10-26 00:27:49,614 [main] INFO Hero_Index - Successfuly perpormed type action in text box :  DOB  with data 07/07/1981
+2021-10-26 00:27:49,870 [main] INFO Hero_Index - Successfuly perpormed type action in text box : Email Id with data radhe.kumar@gmail.com
+2021-10-26 00:27:50,127 [main] INFO Hero_Index - Successfuly perpormed type action in text box : Address1 with data Address: 11255 Trade
+2021-10-26 00:27:50,380 [main] INFO Hero_Index - Successfuly perpormed type action in text box : Address2 with data Center Dr Rancho Cordova, CA
+2021-10-26 00:27:50,612 [main] INFO Hero_Index - Successfuly perpormed type action in text box : City with data California
+2021-10-26 00:27:50,780 [main] INFO Hero_Index - Performed select operation to : CA
+2021-10-26 00:27:51,011 [main] INFO Hero_Index - Successfuly perpormed type action in text box : Zip with data 95742
+2021-10-26 00:27:53,384 [main] INFO Hero_Index - Performed click operation on :  Next 
+2021-10-26 00:27:53,561 [main] INFO Hero_Index - Performed select operation to : F
+2021-10-26 00:27:53,800 [main] INFO Hero_Index - Successfuly perpormed type action in text box : Height in Ft with data 6
+2021-10-26 00:27:54,045 [main] INFO Hero_Index - Successfuly perpormed type action in text box : Height in Inch with data 4
+2021-10-26 00:27:54,344 [main] INFO Hero_Index - Successfuly perpormed type action in text box : Weight with data 60
+2021-10-26 00:28:04,753 [main] ERROR Hero_Index - Performed click operation on :  Yes 
+2021-10-26 00:28:04,993 [main] INFO Hero_Index - Performed click operation on :  Next 
+2021-10-27 09:03:17,618 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 95.0.4638.17 (since Google Chrome 95 is installed in your machine)
+2021-10-27 09:03:17,635 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Shivangi Dwivedi\.m2\repository\webdriver\chromedriver\win32\95.0.4638.17\chromedriver.exe
+2021-10-27 09:03:36,216 [main] INFO Hero_Index - Successfully navigate to URL : https://herouw.net/PHQ/PHQStep1?q=IXLCn9uitjRg8XkOMIzO06Kst49N9xAlP__i_LIaKjC6Sw__s_
+2021-10-27 09:03:36,410 [main] INFO Hero_Index - Successfuly perpormed type action in text box : First Name with data Hero
+2021-10-27 09:03:36,544 [main] INFO Hero_Index - Successfuly perpormed type action in text box : Last Name with data Index
+2021-10-27 09:03:36,655 [main] INFO Hero_Index - Successfuly perpormed type action in text box : Suffix Name with data Sr
+2021-10-27 09:03:36,752 [main] INFO Hero_Index - Performed click operation on : Yes
+2021-10-27 09:03:36,856 [main] INFO Hero_Index - Performed select operation to : 0
+2021-10-27 09:03:37,003 [main] INFO Hero_Index - Successfuly perpormed type action in text box : UserName with data dljEm
+2021-10-27 09:03:37,127 [main] INFO Hero_Index - Successfuly perpormed type action in text box : Password with data Hero@122
+2021-10-27 09:03:37,251 [main] INFO Hero_Index - Successfuly perpormed type action in text box : Password with data Hero@122
+2021-10-27 09:03:37,430 [main] INFO Hero_Index - Successfuly perpormed type action in text box :  DOB  with data 07/07/1981
+2021-10-27 09:03:37,573 [main] INFO Hero_Index - Successfuly perpormed type action in text box : Email Id with data radhe.kumar@gmail.com
+2021-10-27 09:03:37,713 [main] INFO Hero_Index - Successfuly perpormed type action in text box : Address1 with data Address: 11255 Trade
+2021-10-27 09:03:37,857 [main] INFO Hero_Index - Successfuly perpormed type action in text box : Address2 with data Center Dr Rancho Cordova, CA
+2021-10-27 09:03:37,974 [main] INFO Hero_Index - Successfuly perpormed type action in text box : City with data California
+2021-10-27 09:03:38,043 [main] INFO Hero_Index - Performed select operation to : CA
+2021-10-27 09:03:38,152 [main] INFO Hero_Index - Successfuly perpormed type action in text box : Zip with data 95742
+2021-10-27 09:03:44,139 [main] INFO Hero_Index - Performed click operation on :  Next 
+2021-10-27 09:03:44,218 [main] INFO Hero_Index - Performed select operation to : F
+2021-10-27 09:03:44,321 [main] INFO Hero_Index - Successfuly perpormed type action in text box : Height in Ft with data 6
+2021-10-27 09:03:44,421 [main] INFO Hero_Index - Successfuly perpormed type action in text box : Height in Inch with data 4
+2021-10-27 09:03:44,513 [main] INFO Hero_Index - Successfuly perpormed type action in text box : Weight with data 60
+2021-10-27 09:03:54,664 [main] ERROR Hero_Index - Performed click operation on :  Yes 
+2021-10-27 09:03:54,794 [main] INFO Hero_Index - Performed click operation on :  Next 
+2021-10-27 09:23:45,766 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 95.0.4638.17 (since Google Chrome 95 is installed in your machine)
+2021-10-27 09:23:45,784 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Shivangi Dwivedi\.m2\repository\webdriver\chromedriver\win32\95.0.4638.17\chromedriver.exe

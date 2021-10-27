@@ -11,7 +11,7 @@ import com.hero.config.StartBrowser;
 
 import com.hero.utilities.getUtil;
 
-import hero.heroPHQForm_pageObjects.phq_utha_RegistorPage;
+import com_heroPHQForm_pageObjects.PHQ_utha_registerPage;
 
 public class TC_VerifyRegForm_Phq_Utha_1MedCondTrtmntYes_003 extends StartBrowser{
 
@@ -39,10 +39,10 @@ public void VerifyRegForm1MedCondTrtmntYes_3() throws Exception {
 	ActionDriver aDriver = new ActionDriver();
 	//aDriver.navigateToApplication();
 	driver.get("https://herouw.net//Forms/Index?cid=DGSDlLqwFeU__s_&isghq=false");
-	phq_utha_RegistorPage reg = new phq_utha_RegistorPage(driver);
+	PHQ_utha_registerPage reg = new PHQ_utha_registerPage(driver);
 
 	// Test Steps:-
-	reg.clickOnRegistorLink("Registor", 10);
+	reg.clickOnRegisterLink("Registor", 10);
 	reg.clickOnStartReg("Start", 15);
 
 	/* Go to PHQ_Registration Step1 - Identification */

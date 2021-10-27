@@ -1,4 +1,4 @@
-package com.hero.pageObjects;
+package com_heroApplication_pageObjects;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -15,7 +15,7 @@ import com.hero.utilities.getUtil;
 public class addUsersPage {
 	private static final By Akash = null;
 	/**
-	 * This class will be created for Restistor Page Object Reprository :OR
+	 * This class will be created for Register Page Object Repository :OR
 	 * 
 	 * @throws Exception
 	 * 

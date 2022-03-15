@@ -90,6 +90,7 @@ public class StartBrowser {
 		case "Chrome":
 
 			WebDriverManager.chromedriver().setup();
+			//System.setProperty("webdriver.chrome.driver","C:\\Users\\Brajesh Kumar\\OneDrive\\Desktop\\chromedriver.exe");  
 			driver = new ChromeDriver();
 			break;
 		case "Firefox":

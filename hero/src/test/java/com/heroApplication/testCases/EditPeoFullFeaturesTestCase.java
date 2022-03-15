@@ -1,4 +1,4 @@
-package com.hero.testCasesMK;
+package com.heroApplication.testCases;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
@@ -9,6 +9,7 @@ import com.hero.pageObjectsMK.EditPeoFullFeatures;
 import com.hero.pageObjectsMK.EditPeoPage;
 import com.hero.pageObjectsMK.LoginPage;
 import com.hero.pageObjectsMK.addPeoPage;
+import com.hero.utilities.getUtil;
 
 public class EditPeoFullFeaturesTestCase extends StartBrowser{
 	
@@ -20,8 +21,8 @@ public class EditPeoFullFeaturesTestCase extends StartBrowser{
 		aDriver.navigateToApplication();
 		LoginPage lg = new LoginPage(driver);
 		
-		lg.setUserId("akash.admin", 10, "userName");
-		lg.setPassword("2wsx@WSX!", 10, "userName");
+		lg.setUserId("brajesh.admin", 10, "userName");
+		lg.setPassword("Password@2", 10, "userName");
 		lg.clickOnLoginBtn("Login button", 10);
 
 		addPeoPage au = new addPeoPage(driver);
@@ -52,14 +53,14 @@ public class EditPeoFullFeaturesTestCase extends StartBrowser{
         
         EditPeoF.clickOnBucketDefinitionPanel("Bucket Definition Panel", 10);
         EditPeoF.clickOnAddBucketDefinition("Add Bucket Definition", 10);
-        EditPeoF.SetBucketName("MonBucket","Bucket Name",10);
+        EditPeoF.SetBucketName(getUtil.randomString(),"Bucket Name",10);
         EditPeoF.clickOnAddBucket("AddBucket", 10);
         EditPeoF.SetBucketName1("B1","Bucket Name",5);
         EditPeoF.SetBucketMin1("5","Bucket Name",5);
         EditPeoF.SetBucketMax1("10","Bucket Name",5);
         EditPeoF.SetBucketRate1("10","Bucket Name",5);
         EditPeoF.clickOnBucketsave("Bucket Definition Panel", 10);
-        Thread.sleep(10000);
+        Thread.sleep(3000);
         
       //To Add Location Groupings
         
@@ -67,18 +68,18 @@ public class EditPeoFullFeaturesTestCase extends StartBrowser{
         EditPeoF.SetLocation("Loc1","Location",5);
         EditPeoF.clickOnStatus1("StatusL", 10);
         EditPeoF.SetReceivedRatingEmail("Monika@test.in","Received rating email",5);
-        EditPeoF.clickOnAddBucket("AddBucket", 10);
+      //  EditPeoF.clickOnAddBucket("AddBucket", 10);
         EditPeoF.SetBaseline("0.1","Baseline",5);
         EditPeoF.SetTierType("Five-Tier",5);
         EditPeoF.clickOnAreaFactor("clickOnIndustryCode",5);
         EditPeoF.clickOnApplyIndustryFactor("clickOnApplyIndustryFactor",5);
-        EditPeoF.clickOnBucketsave("Bucket Definition Panel", 10);
-        EditPeoF.clickOnAddBucket("AddBucket", 10);
+        //EditPeoF.clickOnBucketsave("Bucket Definition Panel", 10);
+        // EditPeoF.clickOnAddBucket("AddBucket", 10);
         
         
         au.clickOnSubmit("Submit", 10);
     	//driver.findElement(By.xpath("//body/div[@id='container']/div[7]/section[1]/form[1]/div[1]/div[15]/div[1]/input[1]")).click();
-        Thread.sleep(10000);
+        
 	}
 }
 	

@@ -27,7 +27,7 @@ LoginPage lg = new LoginPage(driver);
 
 // Login credentials /
 lg.setUserId("shivangi.admin", 10, "userName");
-lg.setPassword("Password@2", 10, "userName");
+lg.setPassword("Password@1", 10, "userName");
 lg.clickOnLoginBtn("Login button", 10);
 
 

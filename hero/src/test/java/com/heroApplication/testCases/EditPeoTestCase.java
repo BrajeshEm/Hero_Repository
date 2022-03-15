@@ -1,4 +1,4 @@
-package com.hero.testCasesMK;
+package com.heroApplication.testCases;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
@@ -19,8 +19,8 @@ public class EditPeoTestCase extends StartBrowser{
 		aDriver.navigateToApplication();
 		LoginPage lg = new LoginPage(driver);
 		
-		lg.setUserId("akash.admin", 10, "userName");
-		lg.setPassword("2wsx@WSX!", 10, "userName");
+		lg.setUserId("brajesh.admin", 10, "userName");
+		lg.setPassword("Password@2", 10, "userName");
 		lg.clickOnLoginBtn("Login button", 10);
 
 		addPeoPage au = new addPeoPage(driver);

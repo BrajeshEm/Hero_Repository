@@ -27,10 +27,10 @@ PageFactory.initElements(rdriver, this);
 
 // Click on EditCompany and Start Link /
 By entryUW = By.xpath("//div[@data-url='tiles/typography.html']//div[@class='widget_content']");
-By search = By.xpath("//body/div[@id='container']/div[7]/section[1]/div[3]/div[1]/div[1]/div[1]/label[1]/input[1]");
-By sComp1IQE = By.xpath("//body/div[@id='container']/div[7]/section[1]/div[3]/div[1]/div[1]/div[1]/label[1]/input[1]");
-By clickOnSearch = By.xpath("//body/div[@id='container']/div[7]/section[1]/div[3]/div[1]/div[1]/div[1]/a[1]");
-By clickOnCompany = By.xpath("//body[1]/div[1]/div[7]/section[1]/div[3]/div[1]/div[3]/div[3]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/a[1]");
+By search = By.xpath("//input[@placeholder='Search']");
+By sComp1IQE = By.xpath("//input[@placeholder='Search']");
+By clickOnSearch = By.xpath("//a[@class='imageSearchItem']");
+By clickOnCompany = By.xpath("//body[1]/div[1]/div[7]/section[1]/div[4]/div[1]/div[3]/div[3]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/a[1]");
 By clickOnSearchIcon = By.xpath("//body/div[@id='container']/div[7]/section[1]/div[3]/div[1]/div[1]/div[1]/a[1]");
 By viewSubmissionButton = By.xpath("//a[contains(text(),'View Submission')]");
 By pasteCensus = By.xpath("//a[contains(text(),'Paste Census')]");

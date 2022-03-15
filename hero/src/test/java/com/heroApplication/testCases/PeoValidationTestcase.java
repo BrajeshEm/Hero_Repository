@@ -1,6 +1,5 @@
-package com.hero.testCasesMK;
+package com.heroApplication.testCases;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import com.hero.config.ActionDriver;
@@ -20,8 +19,8 @@ public class PeoValidationTestcase extends StartBrowser{
 		aDriver.navigateToApplication();
 		LoginPage lg = new LoginPage(driver);
 		
-		lg.setUserId("akash.admin", 10, "userName");
-		lg.setPassword("2wsx@WSX!", 10, "userName");
+		lg.setUserId("brajesh.admin", 10, "userName");
+		lg.setPassword("Password@2", 10, "userName");
 		lg.clickOnLoginBtn("Login button", 10);
 
 		addPeoPage au = new addPeoPage(driver);
@@ -38,8 +37,8 @@ public class PeoValidationTestcase extends StartBrowser{
         val.valTextAbbrNameName("Please enter Abbreviated Name", "Abbreviated name", 15);
         val.valTextURLNameVal("Please enter URL", "URL", 20);
         val.valTextSubmissionEmail("Please enter Milliman submission email", "Submission Email", 20);
-        val.valTextUWMember("Please select atleast one member for the Milliman UW team", "UW member", 20);
-        val.valTextPrimaryUWMember("Please select a primary member for the Milliman UW team", "Primary UW member", 20);
+//      val.valTextUWMember("Please select atleast one member for the Milliman UW team", "UW member", 20);
+//      val.valTextPrimaryUWMember("Please select a primary member for the Milliman UW team", "Primary UW member", 20);
         
 	}
 }

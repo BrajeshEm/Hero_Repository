@@ -1,16 +1,19 @@
 package com.heroPHQForm.testCases;
 
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
+
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import com.hero.config.ActionDriver;
+
 import com.hero.config.StartBrowser;
 import com.hero.utilities.getUtil;
 
+import com_heroPHQForm_pageObjects.PHQ_arizona_registerPage;
+import com_heroPHQForm_pageObjects.PHQ_general_registerPage;
 import com_heroPHQForm_pageObjects.PHQ_iowa_registerPage;
+import com_heroPHQForm_pageObjects.PHQ_michigan_registerPage;
+import com_heroPHQForm_pageObjects.PHQ_utha_registerPage;
 
 public class TC_VerifyRegFormPHQ_IOWA_1MedCondTrtmntYes_003 extends StartBrowser{
 
@@ -38,8 +41,7 @@ public void VerifyRegForm1MedCondTrtmntYes_3() throws Exception {
 	//ActionDriver aDriver = new ActionDriver();
 	//aDriver.navigateToApplication();
 	driver.get("https://herouw.net//Forms/Index?cid=DGSDlLqwFeU__s_&isghq=false");
-	PHQ_iowa_registerPage reg = new PHQ_iowa_registerPage(driver);
-
+	PHQ_general_registerPage reg = new PHQ_general_registerPage(driver);
 	// Test Steps:-
 	reg.clickOnRegisterLink("Registor", 10);
 	reg.clickOnStartReg("Start", 15);

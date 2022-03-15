@@ -1,11 +1,9 @@
-package com.hero.testCasesMK;
+package com.heroApplication.testCases;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import com.hero.config.ActionDriver;
 import com.hero.config.StartBrowser;
-import com.hero.pageObjectsMK.EditPeoPage;
 import com.hero.pageObjectsMK.LoginPage;
 import com.hero.pageObjectsMK.addCarrier;
 import com.hero.pageObjectsMK.addPeoPage;
@@ -20,8 +18,8 @@ public class addCarrierTestCase extends StartBrowser{
 		aDriver.navigateToApplication();
 		LoginPage lg = new LoginPage(driver);
 
-		lg.setUserId("akash.admin", 10, "userName");
-		lg.setPassword("2wsx@WSX!", 10, "userName");
+		lg.setUserId("brajesh.admin", 10, "userName");
+		lg.setPassword("Password@2", 10, "userName");
 		lg.clickOnLoginBtn("Login button", 10);
 
 		addCarrier ac = new addCarrier(driver);

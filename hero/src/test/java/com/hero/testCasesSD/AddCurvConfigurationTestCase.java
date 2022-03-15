@@ -7,12 +7,7 @@ import com.hero.config.ActionDriver;
 import com.hero.config.StartBrowser;
 import com.hero.pageObjectsSD.AddCurvConfigurationPlansPage;
 import com.hero.pageObjectsSD.AddParityPlansPage;
-import com.hero.pageObjectsSD.CompanyDetailPageCensusUploadPage;
-import com.hero.pageObjectsSD.CompanyDetailPageEmailPage;
-import com.hero.pageObjectsSD.EditCompanyPage;
-import com.hero.pageObjectsSD.FactorTableManagementPage;
 import com.hero.pageObjectsSD.LoginPage;
-import com.hero.pageObjectsSD.StartQuotePage;
 
 public class AddCurvConfigurationTestCase extends StartBrowser{
 
@@ -27,7 +22,7 @@ LoginPage lg = new LoginPage(driver);
 
 // Login credentials /
 lg.setUserId("shivangi.admin", 10, "userName");
-lg.setPassword("Password@2", 10, "userName");
+lg.setPassword("Password@1", 10, "userName");
 lg.clickOnLoginBtn("Login button", 10);
 
 

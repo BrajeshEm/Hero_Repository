@@ -5,9 +5,8 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery.min.js"></script>
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -24,9 +23,8 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-skipped">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Shivangi Dwivedi\AppData\Local\Temp\testng-eclipse--2032537672\testng-customsuite.xml</span>
+                    <span>C:\Users\Brajesh Kumar\AppData\Local\Temp\testng-eclipse--824104458\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,  1 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
                     </span>
-                    <div class="method-list-content failed suite-Default_suite">
+                    <div class="method-list-content skipped suite-Default_suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.heroPHQForm.testCases.TC_VerifyRegFormPHQ_IOWA_1MedCondTrtmntYes_003" class="method navigator-link" hash-for-method="VerifyRegForm1MedCondTrtmntYes_3">VerifyRegForm1MedCondTrtmntYes_3</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.hero.testCasesSD.AddCurvConfigurationTestCase" class="method navigator-link" hash-for-method="AddCurvConfiguration">AddCurvConfiguration</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    </div> <!-- method-list-content skipped suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,96 +117,76 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
+          <div class="suite-Default_suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.heroPHQForm.testCases.TC_VerifyRegFormPHQ_IOWA_1MedCondTrtmntYes_003</span>
+              <img src="skipped.png"/>
+              <span class="class-name">com.hero.testCasesSD.AddCurvConfigurationTestCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyRegForm1MedCondTrtmntYes_3">
-                  </a> <!-- VerifyRegForm1MedCondTrtmntYes_3 -->
-                  <span class="method-name">VerifyRegForm1MedCondTrtmntYes_3</span>
-                  <div class="stack-trace">java.lang.Error: Unresolved compilation problems: 
-	The method clickOnRegisterLink(String, int) is undefined for the type PHQ_iowa_registerPage
-	The method clickOnStartReg(String, int) is undefined for the type PHQ_iowa_registerPage
-	The method setFirstName(String, int, String) is undefined for the type PHQ_iowa_registerPage
-	The method setLastName(String, int, String) is undefined for the type PHQ_iowa_registerPage
-	The method setSuffix(String, int, String) is undefined for the type PHQ_iowa_registerPage
-	The method setMobNumber(String, int, String) is undefined for the type PHQ_iowa_registerPage
-	The method setDateHire(String, int, String) is undefined for the type PHQ_iowa_registerPage
-	The method clickOnHethInsYes(String, int) is undefined for the type PHQ_iowa_registerPage
-	The method setDependent(String, int) is undefined for the type PHQ_iowa_registerPage
-	The method setUserName(String, int, String) is undefined for the type PHQ_iowa_registerPage
-	The method setPassword(String, int, String) is undefined for the type PHQ_iowa_registerPage
-	The method setConfrmPswrd(String, int, String) is undefined for the type PHQ_iowa_registerPage
-	The method setMaritalStatus(String, int) is undefined for the type PHQ_iowa_registerPage
-	The method setEmpStatus(String, int) is undefined for the type PHQ_iowa_registerPage
-	The method setDob(String, int, String) is undefined for the type PHQ_iowa_registerPage
-	The method setEmailId(String, int, String) is undefined for the type PHQ_iowa_registerPage
-	The method setAddress1(String, int, String) is undefined for the type PHQ_iowa_registerPage
-	The method setAddress2(String, int, String) is undefined for the type PHQ_iowa_registerPage
-	The method setCity(String, int, String) is undefined for the type PHQ_iowa_registerPage
-	The method setState(String, int) is undefined for the type PHQ_iowa_registerPage
-	The method setZip(String, int, String) is undefined for the type PHQ_iowa_registerPage
-	The method clickOnNext(String, int) is undefined for the type PHQ_iowa_registerPage
-	The method setSSN(String, int, String) is undefined for the type PHQ_iowa_registerPage
-	The method setGender(String, int) is undefined for the type PHQ_iowa_registerPage
-	The method setHeightFt(String, int, String) is undefined for the type PHQ_iowa_registerPage
-	The method setHeightInch(String, int, String) is undefined for the type PHQ_iowa_registerPage
-	The method setWeight(String, int, String) is undefined for the type PHQ_iowa_registerPage
-	The method checkTmbacoLastYr(String, int) is undefined for the type PHQ_iowa_registerPage
-	The method checkCoverageReq(String, int) is undefined for the type PHQ_iowa_registerPage
-	The method clickOnHethInsCoverageYes(String, int) is undefined for the type PHQ_iowa_registerPage
-	The method clickOnNext(String, int) is undefined for the type PHQ_iowa_registerPage
-	The method clickOnMedConListYes(String, int) is undefined for the type PHQ_iowa_registerPage
-	The method clickOnMedConListNo(String, int) is undefined for the type PHQ_iowa_registerPage
-	The method clickOnNext(String, int) is undefined for the type PHQ_iowa_registerPage
-	The method clickOnNext(String, int) is undefined for the type PHQ_iowa_registerPage
-	The method clickOnElecSign(String, int) is undefined for the type PHQ_iowa_registerPage
-	The method clickOnSubmitbtn(String, int) is undefined for the type PHQ_iowa_registerPage
-	The method verifyRegSubmis(String, int) is undefined for the type PHQ_iowa_registerPage
-
-	at com.heroPHQForm.testCases.TC_VerifyRegFormPHQ_IOWA_1MedCondTrtmntYes_003.VerifyRegForm1MedCondTrtmntYes_3(TC_VerifyRegFormPHQ_IOWA_1MedCondTrtmntYes_003.java:44)
+                  <a name="AddCurvConfiguration">
+                  </a> <!-- AddCurvConfiguration -->
+                  <span class="method-name">AddCurvConfiguration</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;EMLPT0033&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:193)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:179)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.hero.config.StartBrowser.beforeClass(StartBrowser.java:94)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:38117/status] to be available after 20009 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:188)
+	... 35 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 36 more
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
+          </div> <!-- suite-Default_suite-class-skipped -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Shivangi Dwivedi\AppData\Local\Temp\testng-eclipse--2032537672\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Brajesh Kumar\AppData\Local\Temp\testng-eclipse--824104458\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -217,7 +195,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.heroPHQForm.testCases.TC_VerifyRegFormPHQ_IOWA_1MedCondTrtmntYes_003&quot;/&gt;
+      &lt;class name=&quot;com.hero.testCasesSD.AddCurvConfigurationTestCase&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -259,14 +237,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'VerifyRegForm1MedCondTrtmntYes_3')
-data.setCell(0, 2, 'com.heroPHQForm.testCases.TC_VerifyRegFormPHQ_IOWA_1MedCondTrtmntYes_003')
-data.setCell(0, 3, 4);
+data.setCell(0, 1, 'AddCurvConfiguration')
+data.setCell(0, 2, 'com.hero.testCasesSD.AddCurvConfigurationTestCase')
+data.setCell(0, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 ms</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -292,49 +270,48 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.heroPHQForm.testCases.TC_VerifyRegFormPHQ_IOWA_1MedCondTrtmntYes_003</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.hero.testCasesSD.AddCurvConfigurationTestCase</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">beforeSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">extentReporGenerator</span>
-                <span class="method-start">73 ms</span>
+                <span class="method-start">115 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">160 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void com.heroPHQForm.testCases.TC_VerifyRegFormPHQ_IOWA_1MedCondTrtmntYes_003.VerifyRegForm1M...)</span>
-                <span class="method-start">1432 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">VerifyRegForm1MedCondTrtmntYes_3</span>
-                <span class="method-start">1438 ms</span>
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">245 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">20734 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">AddCurvConfiguration</span>
+                <span class="method-start">20737 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=VerifyRegForm1MedCondTrtmntYes_3 status=FAILURE method=TC_VerifyRegFormPHQ_IOWA_1Me...)</span>
-                <span class="method-start">1445 ms</span>
+                <span class="method-name">getResult</span>
+                <span class="method-start">20742 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">1579 ms</span>
+                <span class="method-start">20744 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">1696 ms</span>
+                <span class="method-start">20748 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">1989 ms</span>
+                <span class="method-start">20800 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
-<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

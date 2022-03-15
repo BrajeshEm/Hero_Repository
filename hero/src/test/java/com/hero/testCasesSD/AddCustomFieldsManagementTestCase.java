@@ -28,7 +28,7 @@ LoginPage lg = new LoginPage(driver);
 
 // Login credentials /
 lg.setUserId("shivangi.admin", 10, "userName");
-lg.setPassword("Password@2", 10, "userName");
+lg.setPassword("Password@1", 10, "userName");
 lg.clickOnLoginBtn("Login button", 10);
 
 
@@ -53,7 +53,6 @@ aq.setOnComparisonoperator("=", 10);
 //aq.setOnRequiredCheckBox("Required CheckBox", 10);
 aq.clickOnAdd("Add", 10);
 Thread.sleep(10000);
-
 
 
 

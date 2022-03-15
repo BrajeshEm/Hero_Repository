@@ -36,6 +36,8 @@ By setOnNewPass = By.xpath("//input[@id='NewPasswordWed Jun 09 202118:02:03 GMT+
 By setOnConfirmPass = By.xpath("//input[@id='ConfirmPasswordWed Jun 09 202118:02:03 GMT+0530 (India Standard Time)']");
 By clickOnChangePassword = By.xpath("//body/div[@id='container']/div[7]/section[1]/form[1]/div[1]/div[2]/div[4]/div[2]/input[1]");
 
+By oldPasswordText = By.name("OldPassword");
+
 
 
 
@@ -46,6 +48,7 @@ getUtil get = new getUtil(driver);
 public void clickOnentryUW(String eleName, int timeout) throws Exception {
 adriver.click(entryUW, timeout, eleName);
 }
+
 public void clickOnMyProfile(String eleName, int timeout) throws Exception {
 adriver.click(myProfile, timeout, eleName);
 }

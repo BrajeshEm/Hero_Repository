@@ -75,6 +75,7 @@ adriver.click(ClickOnBrowse, timeout, eleName);
 }
 public void clickOnAddButton(String eleName, int timeout) throws Exception {
 adriver.click(clickOnAdd, timeout, eleName);
+
 }
 
 

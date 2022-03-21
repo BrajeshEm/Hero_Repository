@@ -42,7 +42,11 @@ By setOnParentValue = By.xpath("//input[@id='ddlCustomFieldParentld']");
 By clickOnComparisonoperator = By.xpath("//select[@id='ddlCompareOperator']");
 By setOnComparisonoperator = By.xpath("//option[@id='id1']");
 By clickOnRequiredCheckBox = By.xpath("//input[@id='customField_IsRequired']");
-By clickOnAdd = By.xpath("//input[@id='btnCustomFields']");
+By clickOnAdd = By.id("btnCustomFields");
+By Automation = By.xpath("//option[contains(normalize-space(),'Automation')]");
+By clickPeo  = By.xpath("//button[normalize-space()='All PEO/Assoc./Trust']");
+By PeoNameType = By.xpath("//input[@placeholder='Search']");
+By clickPeoName = By.cssSelector("section[id='content'] form");     
 
 
 
@@ -65,6 +69,7 @@ public void clickOnSelectPeo(String eleName, int timeOut) throws Exception {
 	adriver.click(clickOnSelectPeo, timeOut,eleName );
 	}
 public void clickOnSetPeo(String eleName, int timeout) throws Exception {
+
 adriver.click(setPeo, timeout, eleName);
 }
 public void setOnCustomFieldLabel(String eleName, int timeOut,String typeData) throws Exception {
@@ -77,10 +82,13 @@ public void setOnCustomFieldType(String eleName, int timeout) throws Exception {
 adriver.click(setOnCustomFieldType, timeout, eleName);
 }
 public void clickOnParentName(String eleName, int timeout) throws Exception {
-adriver.click(clickOnParentName, timeout, eleName);
+//adriver.click(clickOnParentName, timeout, eleName);
+	adriver.selectDropdwnByVisibleText(clickOnParentName, timeout, eleName);
 }
-public void setOnParentName(String eleName, int timeout) throws Exception {
-adriver.click(setOnParentName, timeout, eleName);
+public void setOnParentValue(String eleName, int timeout) throws Exception {
+
+//
+adriver.click(Automation, timeout, eleName);
 }
 public void clickOnParentValue(String eleName, int timeout) throws Exception {
 adriver.click(clickOnParentValue, timeout, eleName);
@@ -95,14 +103,37 @@ public void clickOnComparisonoperator(String eleName, int timeout) throws Except
 adriver.click(clickOnComparisonoperator, timeout, eleName);
 }
 public void setOnComparisonoperator(String eleName, int timeout) throws Exception {
-adriver.click(setOnComparisonoperator, timeout, eleName);
+//adriver.click(setOnComparisonoperator, timeout, eleName);
+adriver.selectDropdwnByVisibleText(clickOnComparisonoperator, timeout, eleName);
 }
 public void setOnRequiredCheckBox(String eleName, int timeout) throws Exception {
 adriver.click(clickOnRequiredCheckBox, timeout, eleName);
 }
 public void clickOnAdd(String eleName, int timeout) throws Exception {
+	getUtil.acrollIntoView(driver.findElement(clickOnAdd), driver);
 adriver.click(clickOnAdd, timeout, eleName);
 }
+
+public void selPeo(String typeData,int timeOut,String eleName) throws Exception {
+	adriver.click(clickPeo, timeOut, eleName);
+	adriver.Type(PeoNameType, eleName, timeOut, typeData);
+	Thread.sleep(2000);
+	adriver.click(By.xpath("//label[normalize-space()='"+typeData+"']"), timeOut, eleName);
+}
+
+public void selPeo2(String typeData,int timeOut,String eleName) throws Exception {
+	adriver.click(clickPeo, timeOut, eleName);
+	adriver.Type(PeoNameType, eleName, timeOut, typeData);
+	Thread.sleep(2000);
+	adriver.click(By.xpath("//label[normalize-space()=\"*Te-st,P_e.o'2&(3)_-'.,\"]"), timeOut, eleName);
+}
+
+public void clickAddValueIcon(int timeOut,String eleName) throws Exception {
+	
+	adriver.clickByJs(By.xpath("//tbody/tr[1]/td[9]/a[1]/img[1]"), timeOut, eleName);
+}
+
+
 //public void clickOnLocation(String eleName, int timeout) throws Exception {
 //adriver.click(clickOnLocation, timeout, eleName);
 //}

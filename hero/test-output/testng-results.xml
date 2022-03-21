@@ -1,169 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-15T17:41:04 IST" name="Default suite" finished-at="2022-03-15T17:41:24 IST" duration-ms="20637">
+  <suite name="Default suite" duration-ms="41089" started-at="2022-03-21T13:05:55 IST" finished-at="2022-03-21T13:06:36 IST">
     <groups>
     </groups>
-    <test started-at="2022-03-15T17:41:04 IST" name="Default test" finished-at="2022-03-15T17:41:24 IST" duration-ms="20637">
-      <class name="com.hero.testCasesSD.AddCurvConfigurationTestCase">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.hero.testCasesSD.AddCurvConfigurationTestCase@5032714f]" started-at="2022-03-15T17:41:04 IST" name="beforeSuite" finished-at="2022-03-15T17:41:04 IST" duration-ms="112" status="PASS">
+    <test name="Default test" duration-ms="41089" started-at="2022-03-21T13:05:55 IST" finished-at="2022-03-21T13:06:36 IST">
+      <class name="com.heroApplication.testCases.EmailGPAInvitationTestCase">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.heroApplication.testCases.EmailGPAInvitationTestCase@197d671]" name="beforeSuite" is-config="true" duration-ms="65" started-at="2022-03-21T13:05:55 IST" finished-at="2022-03-21T13:05:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="extentReporGenerator()[pri:0, instance:com.hero.testCasesSD.AddCurvConfigurationTestCase@5032714f]" started-at="2022-03-15T17:41:04 IST" name="extentReporGenerator" finished-at="2022-03-15T17:41:04 IST" duration-ms="121" status="PASS">
+        <test-method status="PASS" signature="extentReporGenerator()[pri:0, instance:com.heroApplication.testCases.EmailGPAInvitationTestCase@197d671]" name="extentReporGenerator" is-config="true" duration-ms="102" started-at="2022-03-21T13:05:55 IST" finished-at="2022-03-21T13:05:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentReporGenerator -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.hero.testCasesSD.AddCurvConfigurationTestCase@5032714f]" started-at="2022-03-15T17:41:04 IST" name="beforeClass" finished-at="2022-03-15T17:41:24 IST" duration-ms="20469" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Timed out waiting for driver server to start.
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EMLPT0033', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
-Driver info: driver.version: ChromeDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EMLPT0033', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
-Driver info: driver.version: ChromeDriver
-at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:193)
-at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:179)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-at com.hero.config.StartBrowser.beforeClass(StartBrowser.java:94)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:38117/status] to be available after 20009 ms
-at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:188)
-... 35 more
-Caused by: java.util.concurrent.TimeoutException
-at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
-at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-... 36 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.heroApplication.testCases.EmailGPAInvitationTestCase@197d671]" name="beforeClass" is-config="true" duration-ms="13577" started-at="2022-03-21T13:05:55 IST" finished-at="2022-03-21T13:06:09 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.hero.testCasesSD.AddCurvConfigurationTestCase@5032714f]" started-at="2022-03-15T17:41:24 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1647346284811" status="SKIP">
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.heroApplication.testCases.EmailGPAInvitationTestCase@197d671]" name="setup" is-config="true" duration-ms="5" started-at="2022-03-21T13:06:09 IST" finished-at="2022-03-21T13:06:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.heroApplication.testCases.EmailGPAInvitationTestCase.EmailGPAInvitation() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="AddCurvConfiguration()[pri:0, instance:com.hero.testCasesSD.AddCurvConfigurationTestCase@5032714f]" started-at="2022-03-15T17:41:24 IST" name="AddCurvConfiguration" finished-at="2022-03-15T17:41:24 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Timed out waiting for driver server to start.
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EMLPT0033', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
-Driver info: driver.version: ChromeDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EMLPT0033', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
-Driver info: driver.version: ChromeDriver
-at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:193)
-at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:179)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-at com.hero.config.StartBrowser.beforeClass(StartBrowser.java:94)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:38117/status] to be available after 20009 ms
-at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:188)
-... 35 more
-Caused by: java.util.concurrent.TimeoutException
-at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
-at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-... 36 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="EmailGPAInvitation()[pri:0, instance:com.heroApplication.testCases.EmailGPAInvitationTestCase@197d671]" name="EmailGPAInvitation" duration-ms="25861" started-at="2022-03-21T13:06:09 IST" finished-at="2022-03-21T13:06:35 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddCurvConfiguration -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.hero.testCasesSD.AddCurvConfigurationTestCase@5032714f]" started-at="2022-03-15T17:41:24 IST" name="getResult" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1647346284819" status="SKIP">
+        </test-method> <!-- EmailGPAInvitation -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.heroApplication.testCases.EmailGPAInvitationTestCase@197d671]" name="getResult" is-config="true" duration-ms="9" started-at="2022-03-21T13:06:35 IST" finished-at="2022-03-21T13:06:35 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EmailGPAInvitation status=SUCCESS method=EmailGPAInvitationTestCase.EmailGPAInvitation()[pri:0, instance:com.heroApplication.testCases.EmailGPAInvitationTestCase@197d671] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.hero.testCasesSD.AddCurvConfigurationTestCase@5032714f]" started-at="2022-03-15T17:41:24 IST" name="afterClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1647346284821" status="SKIP">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.heroApplication.testCases.EmailGPAInvitationTestCase@197d671]" name="afterClass" is-config="true" duration-ms="853" started-at="2022-03-21T13:06:35 IST" finished-at="2022-03-21T13:06:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.hero.testCasesSD.AddCurvConfigurationTestCase@5032714f]" started-at="2022-03-15T17:41:24 IST" name="afterTest" finished-at="2022-03-15T17:41:24 IST" duration-ms="2" status="PASS">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.heroApplication.testCases.EmailGPAInvitationTestCase@197d671]" name="afterTest" is-config="true" duration-ms="640" started-at="2022-03-21T13:06:36 IST" finished-at="2022-03-21T13:06:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.hero.testCasesSD.AddCurvConfigurationTestCase@5032714f]" started-at="2022-03-15T17:41:24 IST" name="afterSuite" finished-at="2022-03-15T17:41:24 IST" duration-ms="0" status="PASS">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.heroApplication.testCases.EmailGPAInvitationTestCase@197d671]" name="afterSuite" is-config="true" duration-ms="0" started-at="2022-03-21T13:06:36 IST" finished-at="2022-03-21T13:06:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.hero.testCasesSD.AddCurvConfigurationTestCase -->
+      </class> <!-- com.heroApplication.testCases.EmailGPAInvitationTestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

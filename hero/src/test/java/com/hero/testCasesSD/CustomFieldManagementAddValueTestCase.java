@@ -35,7 +35,7 @@ lg.clickOnLoginBtn("Login button", 10);
 
 
 //Edit_Custom Fields Management /
-AddParityPlansPage au = new AddParityPlansPage(driver);
+AddParityPlansPeoPage au = new AddParityPlansPeoPage(driver);
 au.clickOnentryUW("UW", 5);
 au.clickOnAdministration("Administration", 10);
 

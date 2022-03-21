@@ -33,6 +33,13 @@ By setGeneral = By.xpath("//body/div[@id='container']/div[7]/section[1]/div[1]/d
 By clickOnSearchIcon = By.xpath("//body/div[@id='container']/div[7]/section[1]/div[1]/div[2]/div[1]/div[1]/a[1]");
 By clickOnGeneralPHQ =By.xpath("//a[contains(text(),'General PHQ')]");
 By clickOnGeneralGHQ = By.xpath("//tbody/tr[4]/td[1]/div[1]/a[1]");
+By FromContactText = By.id("FromContact");
+By ToContactText = By.id("ToContact");
+By CCContactText = By.id("CCContact");
+By SubjectText = By.id("Subject");
+By fileUplod = By.xpath("//input[@id='filename']");
+By emailSentConfirmText = By.xpath("//div[contains(text(),'Email sent successfully.')]");
+By sendBtn        = By.xpath("//input[@type='submit']");
 
 
 
@@ -65,5 +72,32 @@ public void clickOnGeneralGHQ(String eleName, int timeOut) throws Exception {
 adriver.click(clickOnGeneralGHQ, timeOut, eleName );
 }
 
+public void setEmailFrom(String eleName, int timeOut,String typeData) throws Exception {
+adriver.Type(FromContactText, eleName, timeOut,typeData);
+}
+
+public void setEmailTo(String eleName, int timeOut,String typeData) throws Exception {
+adriver.Type(ToContactText, eleName, timeOut,typeData);
+}
+
+public void setEmailCC(String eleName, int timeOut,String typeData) throws Exception {
+adriver.Type(CCContactText, eleName, timeOut,typeData);
+}
+
+public void setEmailSubject(String eleName, int timeOut,String typeData) throws Exception {
+adriver.Type(SubjectText, eleName, timeOut,typeData);
+}
+
+public void emailAttachementUpload(String eleName, int timeOut,String typeData) throws Exception {
+adriver.Type(fileUplod, eleName, timeOut,typeData);
+}
+
+public void emailSentSuccessMsgeVal(String eleName, int timeOut,String expectedOutput) throws Exception {
+adriver.textValidation(emailSentConfirmText, expectedOutput, timeOut, eleName);
+}
+
+public void sendButtonClick(String eleName, int timeOut) throws Exception {
+adriver.clickByJs(sendBtn, timeOut, eleName);
+}
 
 }

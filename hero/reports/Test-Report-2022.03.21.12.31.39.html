@@ -53,7 +53,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Mar 15, 2022 04:53:32 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Mar 21, 2022 12:31:39 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -69,6 +69,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='error'><a href='#!'>Error <i class='material-icons red-text lighten-2'>error</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -125,12 +126,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> others
                 </div>
             </div>
         </div>
@@ -148,25 +149,25 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active has-leaf error' status='error' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>addCarrierTest</span>
-						<span class='test-time'>Mar 15, 2022 04:53:49 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>EmailGPAInvitation</span>
+						<span class='test-time'>Mar 21, 2022 12:31:53 PM</span>
+						<span class='test-status right error'>error</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 15, 2022 04:53:49 PM</span>
-	<span class='label end-time'>Mar 15, 2022 04:54:26 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 37s+175ms</span>
+	<span class='label start-time'>Mar 21, 2022 12:31:53 PM</span>
+	<span class='label end-time'>Mar 21, 2022 12:32:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 30s+831ms</span>
 </div>
 <ul class='collapsible node-list' data-collapsible='accordion'>
-	<li class='node level-1 leaf pass' status='pass' test-id='2'>
+	<li class='node level-1 leaf error' status='error' test-id='2'>
 		<div class='collapsible-header'>
 			<div class='node-name'>Login to Application</div>
-			<span class='node-time'>Mar 15, 2022 04:53:49 PM</span>
-			&middot; <span class='node-duration'>0h 0m 37s+175ms</span>
-			<span class='test-status right pass'>pass</span>
+			<span class='node-time'>Mar 21, 2022 12:31:53 PM</span>
+			&middot; <span class='node-duration'>0h 0m 30s+831ms</span>
+			<span class='test-status right error'>error</span>
 		</div>
 		<div class='collapsible-body'>
 			<div class='author-list right'>
@@ -184,7 +185,7 @@
 					<tbody>
 						<tr class='log' status='info'>
 							<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-							<td class='timestamp'>4:54:06 PM</td>
+							<td class='timestamp'>12:31:58 PM</td>
 							<td class='step-details'>
 									Successfully navigate to URL : https://herouw.net/
 								
@@ -192,23 +193,23 @@
 						</tr>
 						<tr class='log' status='info'>
 							<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-							<td class='timestamp'>4:54:06 PM</td>
+							<td class='timestamp'>12:31:58 PM</td>
 							<td class='step-details'>
-									Successfuly perpormed type action in text box : userName with data brajesh.admin
+									Successfuly perpormed type action in text box : userName with data shivangi.admin
 								
 							</td>
 						</tr>
 						<tr class='log' status='info'>
 							<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-							<td class='timestamp'>4:54:06 PM</td>
+							<td class='timestamp'>12:31:59 PM</td>
 							<td class='step-details'>
-									Successfuly perpormed type action in text box : userName with data Password@2
+									Successfuly perpormed type action in text box : userName with data Password@1
 								
 							</td>
 						</tr>
 						<tr class='log' status='info'>
 							<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-							<td class='timestamp'>4:54:11 PM</td>
+							<td class='timestamp'>12:32:02 PM</td>
 							<td class='step-details'>
 									Performed click operation on : Login button
 								
@@ -216,7 +217,7 @@
 						</tr>
 						<tr class='log' status='info'>
 							<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-							<td class='timestamp'>4:54:19 PM</td>
+							<td class='timestamp'>12:32:06 PM</td>
 							<td class='step-details'>
 									Performed click operation on : UW
 								
@@ -224,81 +225,71 @@
 						</tr>
 						<tr class='log' status='info'>
 							<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-							<td class='timestamp'>4:54:19 PM</td>
+							<td class='timestamp'>12:32:06 PM</td>
 							<td class='step-details'>
-									Performed click operation on : AdminMenu
+									Performed click operation on : Administration
 								
 							</td>
 						</tr>
 						<tr class='log' status='info'>
 							<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-							<td class='timestamp'>4:54:22 PM</td>
+							<td class='timestamp'>12:32:12 PM</td>
 							<td class='step-details'>
-									Performed click operation on : CarrierMgmt
+									Performed click operation on : Email Gpa Invitation
 								
 							</td>
 						</tr>
 						<tr class='log' status='info'>
 							<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-							<td class='timestamp'>4:54:23 PM</td>
+							<td class='timestamp'>12:32:12 PM</td>
 							<td class='step-details'>
-									Performed click operation on : AddCarBtn
+									Successfuly perpormed type action in text box : From Email with data test@heroFrom.com
 								
 							</td>
 						</tr>
 						<tr class='log' status='info'>
 							<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-							<td class='timestamp'>4:54:24 PM</td>
+							<td class='timestamp'>12:32:13 PM</td>
 							<td class='step-details'>
-									Successfuly perpormed type action in text box : CompanyName with data Car111
+									Successfuly perpormed type action in text box : To Email with data test@heroTo.com
 								
 							</td>
 						</tr>
 						<tr class='log' status='info'>
 							<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-							<td class='timestamp'>4:54:24 PM</td>
+							<td class='timestamp'>12:32:13 PM</td>
 							<td class='step-details'>
-									Performed click operation on : Select Peo
+									Successfuly perpormed type action in text box : Email CC with data test@heroCC.com
 								
 							</td>
 						</tr>
 						<tr class='log' status='info'>
 							<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-							<td class='timestamp'>4:54:24 PM</td>
+							<td class='timestamp'>12:32:13 PM</td>
 							<td class='step-details'>
-									Successfuly perpormed type action in text box : Select Peo with data akashPeo
+									Successfuly perpormed type action in text box : To Email with data Milliman New Group Setup Form
 								
 							</td>
 						</tr>
-						<tr class='log' status='info'>
-							<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-							<td class='timestamp'>4:54:24 PM</td>
+						<tr class='log' status='error'>
+							<td class='status error' title='error' alt='error'><i class='material-icons'>error</i></td>
+							<td class='timestamp'>12:32:24 PM</td>
 							<td class='step-details'>
-									Performed click operation on : Select Peo
-								
-							</td>
-						</tr>
-						<tr class='log' status='info'>
-							<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-							<td class='timestamp'>4:54:24 PM</td>
-							<td class='step-details'>
-									Performed click operation on : Select Peo
-								
-							</td>
-						</tr>
-						<tr class='log' status='info'>
-							<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-							<td class='timestamp'>4:54:26 PM</td>
-							<td class='step-details'>
-									Performed click operation on : Submit
+									Unable to perform type action in text box : attached File with data C://Users//Brajesh Kumar//workingAreaSelenium//Hero_Repository//hero//Resources//heroTestData//sample-pdf-file2.pdfExcepInfo.org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=99.0.4844.74)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EMLPT0033', ip: '192.168.1.100', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\BRAJES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52924}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 71cdceb96067ba766f27b646f7d95854com.aventstack.extentreports.MediaEntityModelProvider@4d8539de
 								
 							</td>
 						</tr>
 						<tr class='log' status='pass'>
 							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>4:54:26 PM</td>
+							<td class='timestamp'>12:32:24 PM</td>
 							<td class='step-details'>
-									<span class='badge white-text green'>addCarrierTest Test Case PASSED</span>
+									<span class='badge white-text green'>EmailGPAInvitation Test Case PASSED</span>
 								
 							</td>
 						</tr>
@@ -352,14 +343,14 @@
 					<div class='author-heading'>
 						<span class='author-name'>BrajeshKumar</span>
 						<span class='author-status right'>
-						<span class='label pass'>1</span>
+						<span class='label others'>1</span>
 						</span>
 					</div>
 					<div class='author-content hide'>
 						<div class='author-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
 							
+							<span class='label yellow darken-2 white-text'>Others: 1</span>
 						</div>
 						<div class='author-tests'>
 							<table class='bordered table-results'>
@@ -372,9 +363,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 15, 2022 04:53:49 PM</td>
+										<td>Mar 21, 2022 12:31:53 PM</td>
 										<td class='linked' test-id='2'>Login to Application</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status error'>error</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -410,19 +401,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Mar 15, 2022 04:53:32 PM</div>
+					<div class='panel-lead'>Mar 21, 2022 12:31:39 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Mar 15, 2022 04:54:26 PM</div>
+			 		<div class='panel-lead'>Mar 21, 2022 12:32:25 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 54s+621ms</div>
+					<div class='panel-lead'>0h 0m 45s+610ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -466,15 +457,15 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				childCount: 1,
-				passChild: 1,
+				passChild: 0,
 				failChild: 0,
 				fatalChild: 0,
-				errorChild: 0,
+				errorChild: 1,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				debugChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 1,
 				grandChildCount: 0,
 				passGrandChild: 0,
 				failGrandChild: 0,
@@ -489,7 +480,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "addCarrierTest":37.175
+			        "EmailGPAInvitation":30.831
 			};
 		</script>
 	

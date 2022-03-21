@@ -26,7 +26,7 @@ lg.clickOnLoginBtn("Login button", 10);
 
 
 //Change Password /
-AddParityPlansPage au = new AddParityPlansPage(driver);
+AddParityPlansPeoPage au = new AddParityPlansPeoPage(driver);
 au.clickOnentryUW("UW", 5);
 
 ChangePasswordPlansPage as = new ChangePasswordPlansPage (driver);

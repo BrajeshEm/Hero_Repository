@@ -32,7 +32,7 @@ lg.clickOnLoginBtn("Login button", 10);
 
 
 //Add_ParityPlans /
-AddParityPlansPage au = new AddParityPlansPage(driver);
+AddParityPlansPeoPage au = new AddParityPlansPeoPage(driver);
 au.clickOnentryUW("UW", 5);
 au.clickOnAdministration("Administration", 10);
 au.clickOnPeoAssoc("Peo/AssocTrustManagement", 10);

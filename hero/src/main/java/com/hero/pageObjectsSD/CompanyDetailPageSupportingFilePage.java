@@ -1,7 +1,10 @@
 package com.hero.pageObjectsSD;
 
 import java.io.IOException;
+import java.util.List;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -30,7 +33,7 @@ By entryUW = By.xpath("//div[@data-url='tiles/typography.html']//div[@class='wid
 By search = By.xpath("//input[@placeholder='Search']");
 By sComp1IQE = By.xpath("//body/div[@id='container']/div[7]/section[1]/div[3]/div[1]/div[1]/div[1]/label[1]/input[1]");
 By clickOnSearch = By.xpath("//body/div[@id='container']/div[7]/section[1]/div[3]/div[1]/div[1]/div[1]/a[1]");
-By clickOnCompany = By.xpath("//body[1]/div[1]/div[7]/section[1]/div[3]/div[1]/div[3]/div[3]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/a[1]");
+By clickOnCompany = By.xpath("//body[1]/div[1]/div[7]/section[1]/div[4]/div[1]/div[3]/div[3]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/a[1]");
 By clickOnSearchIcon = By.xpath("//body/div[@id='container']/div[7]/section[1]/div[3]/div[1]/div[1]/div[1]/a[1]");
 By uploadButton = By.xpath("//input[@id='btnMultipleupload']");
 By clickOnFile = By.xpath("//body/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[1]/span[1]/input[1]");
@@ -76,15 +79,17 @@ public void clickOnSearch(String eleName, int timeout) throws Exception {
 adriver.click(search, timeout, eleName);
 }
 public void setOnScomp(String eleName, int timeOut,String typeData) throws Exception {
-adriver.Type(sComp1IQE, eleName, timeOut,typeData);
+adriver.Type(search, eleName, timeOut,typeData);
+driver.findElement(search).sendKeys(Keys.ENTER);
 }
 public void clickOnSearchIcon(String eleName, int timeout) throws Exception {
 adriver.click(clickOnSearch, timeout, eleName);
 }
 
 public void clickOnCompanyName(String eleName, int timeout) throws Exception {
-	
-adriver.click(clickOnCompany, timeout, eleName);
+//	List<WebElement> ele = driver.findElements(By.xpath("//a[normalize-space()='Comp_Hero']"));
+//	ele.get(1).click();
+adriver.clickByJs(clickOnCompany, timeout, eleName);
 }
 
 public void clickOnUpload(String eleName, int timeout) throws Exception {

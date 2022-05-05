@@ -39,7 +39,7 @@ lg.setPassword("Password@2", 10, "userName");
 lg.clickOnLoginBtn("Login button", 10);
 
 
-AddParityPlansPage au = new AddParityPlansPage(driver);
+AddParityPlansPeoPage au = new AddParityPlansPeoPage(driver);
 au.clickOnentryUW("UW", 5);
 au.clickOnAdministration("Administration", 10);
 

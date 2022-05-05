@@ -34,7 +34,7 @@ By setPeo = By.xpath("//body/div[@id='container']/div[7]/section[1]/form[1]/div[
 By clickOnValue = By.xpath("//input[@id='CustomFieldValue']");
 By setOnValue = By.xpath("//input[@id='CustomFieldValue']");
 By clickOnAction = By.xpath("//tbody/tr[1]/td[2]/div[1]/a[1]/img[1]");
-By clickOnSave = By.xpath("//body/div[2]/div[2]/div[1]/div[3]/input[1]");
+By clickOnSave = By.xpath("//input[@value='Save']");
 
 
 

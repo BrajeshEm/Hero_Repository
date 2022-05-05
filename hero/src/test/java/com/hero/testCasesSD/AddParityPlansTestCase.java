@@ -27,12 +27,12 @@ LoginPage lg = new LoginPage(driver);
 
 // Login credentials /
 lg.setUserId("shivangi.admin", 10, "userName");
-lg.setPassword("Password@2", 10, "userName");
+lg.setPassword("Password@1", 10, "userName");
 lg.clickOnLoginBtn("Login button", 10);
 
 
 //Add_ParityPlans /
-AddParityPlansPage au = new AddParityPlansPage(driver);
+AddParityPlansPeoPage au = new AddParityPlansPeoPage(driver);
 au.clickOnentryUW("UW", 5);
 au.clickOnAdministration("Administration", 10);
 au.clickOnPeoAssoc("Peo/AssocTrustManagement", 10);

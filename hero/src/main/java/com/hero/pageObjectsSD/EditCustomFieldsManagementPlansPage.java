@@ -31,9 +31,9 @@ By administration = By.xpath("//body[1]/div[1]/div[5]/ul[1]/li[2]");
 By clickOnCustomFieldsManag = By.xpath("//a[contains(text(),'Custom Fields Management')]");
 By clickOnSelectPeo = By.xpath("//body/div[@id='container']/div[7]/section[1]/form[1]/div[1]/div[1]/div[2]/div[1]/button[1]");
 By setPeo = By.xpath("//body/div[@id='container']/div[7]/section[1]/form[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[4]/a[1]/label[1]");
-By clickOnEditIcon = By.xpath("///tbody/tr[8]/td[7]/a[1]");
-By clickOnParentValue = By.xpath("//input[@id='ddlCustomFieldParentld']");
-By setOnParentValue = By.xpath("//input[@id='ddlCustomFieldParentld']");
+By clickOnEditIcon = By.xpath("//tbody/tr[2]/td[7]/a[1]");
+By clickOnParentName = By.xpath("//select[@id='ddlCustomFieParentld']");
+By setOnParentValue = By.xpath("//select[@id='ddlcustomFieldParentValue']");
 By clickOnComparisonoperator = By.xpath("//select[@id='ddlCompareOperator']");
 By setOnComparisonoperator = By.xpath("//option[contains(text(),'<')]");
 By clickOnSave = By.xpath("//input[@id='btnCustomFields']");
@@ -65,11 +65,13 @@ public void clickOnEditIcon(String eleName, int timeOut) throws Exception {
 	getUtil.ScrolldownTillPageEnd(driver);
 adriver.click(clickOnEditIcon, timeOut, eleName);
 }
-public void clickOnParentValue(String eleName, int timeout) throws Exception {
-adriver.click(clickOnParentValue, timeout, eleName);
+public void clickOnParentName(String eleName, int timeOut) throws Exception {
+//adriver.click(clickOnParentName, timeout, eleName);
+	adriver.selectDropdwnByVisibleText(clickOnParentName, timeOut, eleName);
 }
-public void setOnParentValue(String eleName, int timeOut,String typeData) throws Exception {
-adriver.Type(setOnParentValue, eleName, timeOut,typeData);
+public void setOnParentValue(String eleName, int timeOut) throws Exception {
+//adriver.Type(setOnParentValue, eleName, timeOut,typeData);
+adriver.selectDropdwnByVisibleText(setOnParentValue, timeOut, eleName);
 }
 public void clickOnComparisonoperator(String eleName, int timeout) throws Exception {
 adriver.click(clickOnComparisonoperator, timeout, eleName);
@@ -78,6 +80,7 @@ public void setOnComparisonoperator(String eleName, int timeout) throws Exceptio
 adriver.click(setOnComparisonoperator, timeout, eleName);
 }
 public void clickOnSave(String eleName, int timeout) throws Exception {
+	getUtil.acrollIntoView(driver.findElement(clickOnSave), driver);
 adriver.click(clickOnSave, timeout, eleName);
 }
 

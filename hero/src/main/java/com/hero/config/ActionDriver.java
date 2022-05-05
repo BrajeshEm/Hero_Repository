@@ -259,10 +259,6 @@ public class ActionDriver extends StartBrowser {
 	
 	
 	
-	
-	
-	
-	
 
 	public void clickAndScroll(By locator, By locator2, String redBtn) throws InterruptedException {
 		List<WebElement> elelist = driver.findElements(locator);

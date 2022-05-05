@@ -3,19 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.heroPHQForm.testCases.TC_VerifyRegFormPHQ_IOWA_1MedCondTrtmntYes_003">
+      <class name="bavvyTestCases.AlertDemo">
         <methods>
-          <include name="afterClass"/>
-          <include name="beforeSuite"/>
-          <include name="afterTest"/>
-          <include name="getResult"/>
-          <include name="setup"/>
-          <include name="afterSuite"/>
-          <include name="beforeClass"/>
-          <include name="extentReporGenerator"/>
-          <include name="VerifyRegForm1MedCondTrtmntYes_3"/>
+          <include name="alertDemoTest"/>
         </methods>
-      </class> <!-- com.heroPHQForm.testCases.TC_VerifyRegFormPHQ_IOWA_1MedCondTrtmntYes_003 -->
+      </class> <!-- bavvyTestCases.AlertDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

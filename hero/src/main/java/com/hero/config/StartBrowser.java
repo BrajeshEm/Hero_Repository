@@ -15,6 +15,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.ITestResult;
@@ -80,7 +81,7 @@ public class StartBrowser {
 	
 	@BeforeClass
 	//@Parameters("browser")
-	public void beforeClass() {
+	public void beforeClass() throws InterruptedException {
 
 	Readconfig redconfig = new Readconfig();
 
@@ -88,8 +89,10 @@ public class StartBrowser {
 
 		switch (browser) {
 		case "Chrome":
-
+			System.setProperty("webdriver.chrome.silentOutput","true");
 			WebDriverManager.chromedriver().setup();
+			Thread.sleep(10000);
+			//System.setProperty("webdriver.chrome.driver","C:\\Users\\Brajesh Kumar\\OneDrive\\Desktop\\chromedriver.exe");  
 			driver = new ChromeDriver();
 			break;
 		case "Firefox":
@@ -100,6 +103,10 @@ public class StartBrowser {
 			WebDriverManager.iedriver().setup();
 			driver = new InternetExplorerDriver();
 			break;
+		case "Edge":
+			WebDriverManager.edgedriver().setup();
+			 driver = new EdgeDriver();
+			break;
 		default:
 			System.out.println("Please Provide the Correct Browser");
 			break;
@@ -108,6 +115,7 @@ public class StartBrowser {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(getUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(getUtil.IMPLICITY_WAIT, TimeUnit.SECONDS);
+		
 
 	}
 

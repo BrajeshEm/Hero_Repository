@@ -31,7 +31,7 @@ By administration = By.xpath("//body[1]/div[1]/div[5]/ul[1]/li[2]");
 By clickOnDrugsManag = By.xpath("//a[contains(text(),'Drugs Management')]");
 //By clickOnDrugType = By.xpath("//select[@id='drugModel_DrugType']");
 By clickOnSelectDrugType = By.xpath("//option[contains(text(),'PHQ')]");
-By clickOnBrowser = By.xpath("//input[@id='fileuploadfile']");
+By clickOnBrowser = By.id("fileuploadfile");
 By clickOnAdd = By.xpath("//input[@id='submitbutton']");
 
 

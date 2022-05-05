@@ -22,7 +22,7 @@ aDriver.navigateToApplication();
 LoginPage lg = new LoginPage(driver);
 
 lg.setUserId("brajesh.admin", 10, "userName");
-lg.setPassword("2wsx@WSX!", 10, "userName");
+lg.setPassword("Password@2", 10, "userName");
 lg.clickOnLoginBtn("Login button", 10);
 
 CompanyDetailPageViewSubmissionPage au = new CompanyDetailPageViewSubmissionPage(driver);

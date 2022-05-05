@@ -21,7 +21,7 @@ aDriver.navigateToApplication();
 LoginPage lg = new LoginPage(driver);
 
 lg.setUserId("shivangi.admin", 10, "userName");
-lg.setPassword("Password@2", 10, "userName");
+lg.setPassword("Password@1", 10, "userName");
 lg.clickOnLoginBtn("Login button", 10);
 
 CompanyDetailPageCensusUploadPage au = new CompanyDetailPageCensusUploadPage(driver);

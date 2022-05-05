@@ -33,7 +33,7 @@ By clickOnSearch = By.xpath("//body/div[@id='container']/div[7]/section[1]/div[3
 By setfresh = By.xpath("//body/div[@id='container']/div[7]/section[1]/div[3]/div[1]/div[2]/label[1]/input[1]");
 By clickOnSearchIcon = By.xpath("//body/div[@id='container']/div[7]/section[1]/div[3]/div[1]/div[2]/a[1]");
 By clickOnEdit = By.xpath("//tbody/tr[1]/td[5]/a[1]");
-By clickOnCurvConfiguration = By.xpath("//body/div[@id='container']/div[7]/section[1]/form[1]/div[1]/div[13]");
+By clickOnCurvConfiguration = By.xpath("//span[normalize-space()='Curv Configuration']");
 By clickOnLocation = By.xpath("//body/div[@id='container']/div[7]/section[1]/form[1]/div[1]/div[14]/div[1]/div[2]/button[1]");
 By ClickOnLocCheckbox = By.xpath("//div[@class='btn-group open']//li[@class='multiselect-item multiselect-all']//input[@name='multiselect']");
 By clickOnRadioButton1 = By.xpath("//body/div[@id='container']/div[7]/section[1]/form[1]/div[1]/div[14]/div[2]/div[2]/input[1]");
@@ -79,7 +79,9 @@ public void clickOnEditIcon(String eleName, int timeout) throws Exception {
 adriver.click(clickOnEdit, timeout, eleName);
 }
 public void clickOnCurvConfig(String eleName, int timeout) throws Exception {
+	getUtil.acrollIntoView(driver.findElement(clickOnCurvConfiguration),driver);
 adriver.click(clickOnCurvConfiguration, timeout, eleName);
+
 }
 public void clickOnLocation(String eleName, int timeout) throws Exception {
 adriver.click(clickOnLocation, timeout, eleName);

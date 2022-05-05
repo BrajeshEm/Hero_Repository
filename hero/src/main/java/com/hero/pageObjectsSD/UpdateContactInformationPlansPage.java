@@ -31,10 +31,8 @@ By myProfile = By.xpath("//a[contains(text(),'MY PROFILE')]");
 By clickOnUpdateContact = By.xpath("//a[contains(text(),'Update Contact')]");
 By setOnPhone = By.xpath("//input[@id='Phone']");
 By setOnQualification = By.xpath("//input[@id='Qualification']");
-By clickOnSave = By.xpath("//body/div[@id='container']/div[7]/section[1]/form[1]/div[1]/fieldset[1]/div[7]/div[7]/div[2]/input[1]");
-
-
-
+By clickOnSave = By.xpath("//input[@name='submit']");
+By updateConfirmationMsge  = By.xpath("//div[contains(text(),'Profile Updated Successfully')]");
 
 
 // Setup Method for Update Contact Information : /
@@ -58,7 +56,11 @@ public void setOnQualification(String eleName, int timeOut,String typeData) thro
 adriver.Type(setOnQualification, eleName, timeOut,typeData);
 }
 public void clickOnSave(String eleName, int timeOut) throws Exception {
+	getUtil.ScrolldownTillPageEnd(driver);
 adriver.click(clickOnSave,timeOut, eleName);
+}
+public void valUpdateConfirmMsge(String eleName, int timeOut, String expectedOutput) throws Exception {
+	adriver.textValidation(updateConfirmationMsge, expectedOutput, timeOut, eleName);
 }
 
 }

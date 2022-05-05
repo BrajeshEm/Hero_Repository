@@ -115,6 +115,7 @@ public class StartBrowser {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(getUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(getUtil.IMPLICITY_WAIT, TimeUnit.SECONDS);
+		
 
 	}
 

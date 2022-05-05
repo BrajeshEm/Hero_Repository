@@ -27,8 +27,8 @@ PageFactory.initElements(rdriver, this);
 
 // ValidationCheck /
 By entryUW = By.xpath("//div[@data-url='tiles/typography.html']//div[@class='widget_content']");
-By startq = By.xpath("//body/div[@id='container']/div[7]/section[1]/div[1]/div[1]/div[1]/input[1]");
-By saveAndContinue = By.xpath("//body/div[@id='container']/div[7]/section[1]/form[1]/div[2]/div[1]/input[1]");
+By startq = By.xpath("//input[@value='START QUOTE']");
+By saveAndContinue = By.xpath("//input[@value='Save & Continue']");
 By eleText = By.xpath("//span[contains(text(),'Please enter Company Name')]");
 By eleText2 = By.xpath("//span[contains(text(),'Please select PEO/Assoc./Trust')]");
 By eleText3 = By.xpath("//span[contains(text(),'Please enter Number of benefit eligible EEs')]");
@@ -52,6 +52,7 @@ public void clickOnentrySQ(String eleName, int timeout) throws Exception {
 adriver.click(startq, timeout, eleName);
 }
 public void clickOnSave(String eleName, int timeout) throws Exception {
+	getUtil.ScrolldownTillPageEnd(driver);
 adriver.click(saveAndContinue, timeout, eleName);
 }
 public void valTextMsgeCompName(String expectedOutput,String eleName, int timeOut) throws Exception {

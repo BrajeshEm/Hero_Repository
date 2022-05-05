@@ -5,8 +5,9 @@ import org.testng.annotations.Test;
 
 import com.hero.config.ActionDriver;
 import com.hero.config.StartBrowser;
-import com.hero.pageObjectsSD.CompanyDetailPageSupportingFilePage;
 import com.hero.pageObjectsSD.LoginPage;
+
+import com_heroApplication_pageObjects.CompanyPage;
 
 public class CompanyDetailPageSupportingDataFileTestCase extends StartBrowser{
 
@@ -22,7 +23,7 @@ lg.setUserId("brajesh.admin", 10, "userName");
 lg.setPassword("Password@2", 10, "userName");
 lg.clickOnLoginBtn("Login button", 10);
 
-CompanyDetailPageSupportingFilePage au = new CompanyDetailPageSupportingFilePage(driver);
+CompanyPage au = new CompanyPage(driver);
 au.clickOnentryUW("UW", 5);
 au.clickOnSearch("Search", 10);
 au.setOnScomp("select", 10, "Comp1IQE");

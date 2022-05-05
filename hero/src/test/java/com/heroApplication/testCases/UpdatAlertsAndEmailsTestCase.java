@@ -20,6 +20,8 @@ import com.hero.pageObjectsSD.StartQuotePage;
 import com.hero.pageObjectsSD.UpdateAlertsAndEmailsPlansPage;
 import com.hero.pageObjectsSD.UpdateContactInformationPlansPage;
 
+import com_heroApplication_pageObjects.AddParityPlansPeoPage;
+
 public class UpdatAlertsAndEmailsTestCase extends StartBrowser{
 
 @Test
@@ -33,7 +35,7 @@ LoginPage lg = new LoginPage(driver);
 
 // Login credentials /
 lg.setUserId("shivangi.admin", 10, "userName");
-lg.setPassword("Password@2", 10, "userName");
+lg.setPassword("Password@1", 10, "userName");
 lg.clickOnLoginBtn("Login button", 10);
 
 

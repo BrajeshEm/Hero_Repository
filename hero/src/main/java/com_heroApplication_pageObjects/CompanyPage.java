@@ -8,6 +8,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.hero.config.ActionDriver;
 import com.hero.utilities.getUtil;
@@ -38,7 +39,7 @@ public class CompanyPage {
 	By clickOnCompany = By.xpath(
 			"//body[1]/div[1]/div[7]/section[1]/div[4]/div[1]/div[3]/div[3]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/a[1]");
 	By clickOnSearchIcon = By.xpath("//body/div[@id='container']/div[7]/section[1]/div[3]/div[1]/div[1]/div[1]/a[1]");
-	By uploadButton = By.xpath("//input[@id='btnMultipleupload']");
+	By uploadButton = By.xpath("//input[@id='btnbatchupload']");
 	By clickOnFile = By.xpath("//body/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[1]/span[1]/input[1]");
 	By save = By.xpath("//input[@id='btnUploadDoc']");
 	By sComp6 = By.xpath("//body/div[@id='container']/div[7]/section[1]/div[3]/div[1]/div[1]/div[1]/label[1]/input[1]");
@@ -125,8 +126,9 @@ public class CompanyPage {
 	By clickOnComparisonoperator = By.xpath("//select[@id='ddlCompareOperator']");
 	By setOnComparisonoperator = By.xpath("//option[contains(text(),'<')]");
 	By clickOnSave = By.xpath("//input[@id='btnCustomFields']");
+	By uploadBatchFile = By.id("batchfileupload");
 	
-
+	
 public void clickOnentryUW(String eleName, int timeout) throws Exception {
 adriver.click(entryUW, timeout, eleName);
 }
@@ -192,6 +194,7 @@ adriver.click(setOnComparisonoperator, timeout, eleName);
 	}
 
 	public void clickOnUpload(String eleName, int timeout) throws Exception {
+		getUtil.ScrolldownTillPageEnd(driver);
 		adriver.click(uploadButton, timeout, eleName);
 	}
 
@@ -344,8 +347,15 @@ adriver.click(setOnComparisonoperator, timeout, eleName);
 			adriver.click(customField, timeout, eleName);
 			}
 		
+			public void uploadBatchFile(String TypeDta) throws IOException {
+				adriver.Type(uploadBatchFile, "batch file Upload", 10,  TypeDta);
+			}
 
-
+            public void valUploadSuccessText(String expText) throws Exception {
+            	String s1 = adriver.captureText(By.id("dvMsg"), 10, "batch file upload success message");
+            	//String s1 = driver.findElement(By.id("dvMsg")).getText();
+            	Assert.assertEquals(s1.substring(0, 71), expText);
+            }
 
 	
 	

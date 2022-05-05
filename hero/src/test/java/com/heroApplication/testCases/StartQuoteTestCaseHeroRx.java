@@ -6,8 +6,9 @@ import org.testng.annotations.Test;
 import com.hero.config.ActionDriver;
 import com.hero.config.StartBrowser;
 import com.hero.pageObjectsSD.LoginPage;
-import com.hero.pageObjectsSD.StartQuotePage;
-import com.hero.pageObjectsSD.StartQuotePageHeroRx;
+import com.hero.utilities.getUtil;
+
+import com_heroApplication_pageObjects.StartQuotePage;
 
 public class StartQuoteTestCaseHeroRx extends StartBrowser{
 
@@ -20,19 +21,22 @@ aDriver.navigateToApplication();
 LoginPage lg = new LoginPage(driver);
 
 lg.setUserId("brajesh.admin", 10, "userName");
-lg.setPassword("2wsx@WSX!", 10, "userName");
+lg.setPassword("Password@2", 10, "userName");
 lg.clickOnLoginBtn("Login button", 10);
 
-StartQuotePageHeroRx au = new StartQuotePageHeroRx(driver);
+StartQuotePage au = new StartQuotePage(driver);
 au.clickOnentryUW("UW", 5);
 au.clickOnentrySQ("Start Quote", 10);
-au.setOnComp("Compname", 10,"COMP3");
+String compName = getUtil.randomString();
+au.setOnComp("Compname", 10, compName);
 au.setPeo("Fresh Peo", 10);
 au.setUwType("Hero Rx", 10);
 au.setStatus("Reviewed by Uw", 10);
 au.setNumOFEmp("Num oF Eligible Emp", 10, "5");
 au.setCurrentHealthCarrier("None/Virgin","Current health carrier", 10);
-au.clickOnCompWithCurrentlyPeo("Is comp currently with peo", 10);
+au.clickOnCompWithCurrentlyPeo("Is comp currently with peo", 10,"Yes");
+au.setEffectiveDate("Effective Date", 10, "03/22/2022");
+au.setUpcustom1TextBox("Custom txt box", 10, "sssd");
 au.selCity("Akron", "City", 10);
 au.setState("State", 10);
 au.setZipCode("Zip Code", 10, "12345");
@@ -42,7 +46,7 @@ au.setUpcommingRenewalDate("Upcomming renewal date", 10, "05/19/2021");
 au.setUpcustom1TextBox("Custom txt box", 10,"sssd");
 au.selContacts("Contacts", "Fresh Gk", 10);
 au.clickOnSave("Save and Continue", 10);
-au.setEffectiveDate("Effective Date", 10, "07/20/2021");
-Thread.sleep(5000);
+Thread.sleep(2000);
+au.clientNameValidation(compName, 10, "clientName");
 }
 }
